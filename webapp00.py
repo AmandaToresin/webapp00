@@ -16,3 +16,5 @@ st.write("O memorial de cálculo é um documento que detalha todos os cálculos 
 st.subheader("Importância dos Dados")
 
 st.write("Os dados contidos no memorial de cálculo são cruciais para a confiabilidade do projeto. Eles ajudam a evitar erros, economizar recursos e garantir a sustentabilidade das construções. Sem eles, o risco de falhas aumenta significativamente.")
+
+st.image("https://www.google.com/url?sa=i&url=https%3A%2F%2Fconube.com.br%2Fblog%2Fmercado-de-trabalho-para-engenheiros-no-brasil%2F&psig=AOvVaw0gj1ru0HeHMxSpbkIuTLWt&ust=1729874877788000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLD3vZ-8p4kDFQAAAAAdAAAAABAE", caption="Engenheiros", use_column_width=True)
