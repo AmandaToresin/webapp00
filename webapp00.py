@@ -16,4 +16,23 @@ def calcular_orcamento(area, preco_por_m2, adicionar_sobra):
     
     :param area: A área do piso em metros quadrados (m²)
     :param preco_por_m2: O preço do piso por metro quadrado (R$)
-    :param adicionar_sobra: Booleano
+    :param adicionar_sobra: Booleano indicando se deve adicionar 20% de sobra
+    :return: O orçamento total (R$)
+    """
+    if adicionar_sobra:
+        area *= 1.20  # Adiciona 20% à área total
+    orcamento_total = area * preco_por_m2
+    return orcamento_total
+
+# Informações sobre o preço padrão
+st.write("Para facilitar o cálculo, estamos considerando o preço padrão do piso como R$ 100,00 por m².")
+
+# Campos de entrada
+area = st.number_input("Digite a área do piso em m²:", min_value=0.0, format="%.2f")
+preco_por_m2 = 100.00  # Valor padrão
+adicionar_sobra = st.checkbox("Deseja adicionar 20% de sobra?")
+
+# Botão para calcular
+if st.button("Calcular Orçamento"):
+    orcamento = calcular_orcamento(area, preco_por_m2, adicionar_sobra)
+    st.success(f"### O orçamento total para o piso é: R$ {orcamento:.2f}")
