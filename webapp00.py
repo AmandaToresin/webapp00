@@ -12,8 +12,6 @@ st.image("https://images.tcdn.com.br/img/img_prod/614225/piso_ceramico_interno_p
 
 def calcular_orcamento(area, preco_por_m2, adicionar_sobra):
     """
-    Calcula o orçamento total para o piso com base na área, preço por m² e a opção de adicionar 20% de sobra.
-    
     :param area: A área do piso em metros quadrados (m²)
     :param preco_por_m2: O preço do piso por metro quadrado (R$)
     :param adicionar_sobra: Booleano indicando se deve adicionar 20% de sobra
@@ -25,7 +23,7 @@ def calcular_orcamento(area, preco_por_m2, adicionar_sobra):
     return orcamento_total
 
 # Informações sobre o preço padrão
-st.write("Para facilitar o cálculo, estamos considerando o preço padrão do piso como R$ 100,00 por m².")
+st.write("O valor deste piso é de R$ 100,00 / m².")
 
 # Campos de entrada
 area = st.number_input("Digite a área do piso em m²:", min_value=0.0, format="%.2f")
