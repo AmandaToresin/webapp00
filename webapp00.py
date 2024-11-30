@@ -17,4 +17,4 @@ st.subheader("Importância dos Dados")
 
 st.write("Os dados contidos no memorial de cálculo são cruciais para a confiabilidade do projeto. Eles ajudam a evitar erros, economizar recursos e garantir a sustentabilidade das construções. Sem eles, o risco de falhas aumenta significativamente.")
 
-st.image("https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.pinterest.com%2Fpin%2F821062575826976807%2F&psig=AOvVaw2t18is2Oddeb_vKKA0u7_8&ust=1729874953357000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJD2x8K8p4kDFQAAAAAdAAAAABAE", caption="Engenheiros", use_column_width=True)
+st.image("https://images.tcdn.com.br/img/img_prod/614225/piso_ceramico_interno_polido_avolio_66x66cm_cx_2_18m_formigres_81143_2_b834d5c845372194ba34b12f1882dfb6.jpg", caption="Engenheiros", use_column_width=True)
