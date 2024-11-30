@@ -34,3 +34,9 @@ adicionar_sobra = st.checkbox("Deseja adicionar 20% de sobra?")
 if st.button("Calcular Orçamento"):
     orcamento = calcular_orcamento(area, preco_por_m2, adicionar_sobra)
     st.success(f"### O orçamento total para o piso é: R$ {orcamento:.2f}")
+
+# Segunda opcao
+
+st.subheader("Piso Cerâmico Retificado 66x66cm Caixa com 2,18 m² Extra Marmi Delux Mate Formigres")
+st.image("https://telhanorte.vtexassets.com/arquivos/ids/1245914/7899436339296.jpg?v=638119047284200000", caption="Engenheiros", use_column_width=True)
+
