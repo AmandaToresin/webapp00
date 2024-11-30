@@ -1,6 +1,5 @@
-# MEU PRIMEIRO WEB APP
 import streamlit as st
-  
+
 # Use st.title("") para adicionar um TÍTULO ao seu Web app
 st.title("UniPisos")
 
@@ -33,10 +32,12 @@ def calcular_orcamento(area, preco_por_m2, adicionar_sobra):
     orcamento_total = area * preco_por_m2
     return orcamento_total
 
-# Exemplo de uso
-area = float(input("Digite a área do piso em m²: "))
-preco_por_m2 = float(input("Digite o preço do piso por m² (R$): "))
-adicionar_sobra = input("Deseja adicionar 20% de sobra? (sim/não): ").strip().lower() == "sim"
+# Campos de entrada
+area = st.number_input("Digite a área do piso em m²:", min_value=0.0, format="%.2f")
+preco_por_m2 = st.number_input("Digite o preço do piso por m² (R$):", min_value=0.0, format="%.2f")
+adicionar_sobra = st.checkbox("Deseja adicionar 20% de sobra?")
 
-orcamento = calcular_orcamento(area, preco_por_m2, adicionar_sobra)
-print(f"O orçamento total para o piso é: R$ {orcamento:.2f}")
+# Botão para calcular
+if st.button("Calcular Orçamento"):
+    orcamento = calcular_orcamento(area, preco_por_m2, adicionar_sobra)
+    st.write(f"O orçamento total para o piso é: R$ {orcamento:.2f}")
