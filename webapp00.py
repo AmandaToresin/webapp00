@@ -45,11 +45,11 @@ if st.button("Calcular Orçamento para Piso Cerâmico"):
     st.info(f"Você precisará de aproximadamente {caixas_necessarias2:.0f} caixas de Piso Cerâmico.")
 
 # Terceiro Piso - Piso Vinílico
-st.subheader("Piso Vinílico Vinil Forte Jacarandá 2x19x123cm (R$ 100,00 por caixa)")
+st.subheader("Piso Vinílico Vinil Forte Jacarandá 2x19x123cm (R$ 99,90 por caixa)")
 st.image("https://cdn.dooca.store/116921/products/jacaranda-hd-19x123-modelo-1_1600x1600+fill_ffffff.jpg?v=1692322213", caption="Piso Vinílico", use_column_width=True)
 area3 = st.number_input("Digite a área do piso Vinílico em m²:", min_value=0.0, format="%.2f")
 adicionar_sobra3 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Vinílico?", key='vinilico')
 if st.button("Calcular Orçamento para Piso Vinílico"):
-    orcamento3, caixas_necessarias3 = calcular_orcamento(area3, 100.00, adicionar_sobra3, 2.18)
+    orcamento3, caixas_necessarias3 = calcular_orcamento(area3, 99.90, adicionar_sobra3, 2.18)
     st.success(f"### O orçamento total para o Piso Vinílico é: R$ {orcamento3:.2f}")
     st.info(f"Você precisará de aproximadamente {caixas_necessarias3:.0f} caixas de Piso Vinílico.")
