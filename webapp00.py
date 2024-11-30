@@ -25,17 +25,17 @@ def calcular_orcamento(area, preco_por_caixa, adicionar_sobra, area_por_caixa):
     return orcamento_total, caixas_necessarias
 
 # Primeiro Piso - Piso Laminado
-st.subheader("Piso Laminado de 66x66 cm (R$ 100,00 por caixa de 2,18 m²)")
+st.subheader("Piso Laminado Eucafloor Prime Click Carvalho Canela Cx 2,36m² (R$ 119,90 por caixa de 2,36 m²)")
 st.image("https://static.estilohomecenter.com.br/public/estilohomecenter/imagens/produtos/piso-laminado-eucafloor-carvalho-canela-prime-click-cx-2-36m2-6651f11b0ba71.jpg", caption="Piso Laminado", use_column_width=True)
 area1 = st.number_input("Digite a área do piso Laminado em m²:", min_value=0.0, format="%.2f")
 adicionar_sobra1 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Laminado?", key='laminado')
 if st.button("Calcular Orçamento para Piso Laminado"):
-    orcamento1, caixas_necessarias1 = calcular_orcamento(area1, 100.00, adicionar_sobra1, 2.18)
+    orcamento1, caixas_necessarias1 = calcular_orcamento(area1, 100.00, adicionar_sobra1, 2.36)
     st.success(f"### O orçamento total para o Piso Laminado é: R$ {orcamento1:.2f}")
     st.info(f"Você precisará de aproximadamente {caixas_necessarias1:.0f} caixas de Piso Laminado.")
 
 # Segundo Piso - Piso Cerâmico
-st.subheader("Piso Cerâmico Retificado 66x66 cm (R$ 100,00 por caixa de 2,18 m²)")
+st.subheader("Piso Cerâmico Retificado 66x66 cm (R$ 89,90 por caixa de 2,18 m²)")
 st.image("https://telhanorte.vtexassets.com/arquivos/ids/1245914/7899436339296.jpg?v=638119047284200000", caption="Piso Cerâmico", use_column_width=True)
 area2 = st.number_input("Digite a área do piso Cerâmico em m²:", min_value=0.0, format="%.2f")
 adicionar_sobra2 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Cerâmico?", key='ceramico')
