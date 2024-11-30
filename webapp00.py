@@ -8,9 +8,9 @@ st.write("O memorial de cálculo é um documento que detalha todos os cálculos 
 st.subheader("Importância dos Dados")
 st.write("Os dados contidos no memorial de cálculo são cruciais para a confiabilidade do projeto. Eles ajudam a evitar erros, economizar recursos e garantir a sustentabilidade das construções. Sem eles, o risco de falhas aumenta significativamente.")
 
-st.image("https://images.tcdn.com.br/img/img_prod/614225/piso_ceramico_interno_polido_avolio_66x66cm_cx_2_18m_formigres_81143_2_b834d5c845372194ba34b12f1882dfb6.jpg", caption="Engenheiros", use_column_width=True)
+st.image("https://static.estilohomecenter.com.br/public/estilohomecenter/imagens/produtos/piso-laminado-eucafloor-carvalho-canela-prime-click-cx-2-36m2-6651f11b0ba71.jpg", caption="Engenheiros", use_column_width=True)
 
-
+def calcular_orcamento(area, preco_por_caixa, adicionar_sobra):
 
 # Segunda opcao
 
