@@ -40,6 +40,6 @@ st.image("https://telhanorte.vtexassets.com/arquivos/ids/1245914/7899436339296.j
 area2 = st.number_input("Digite a área do piso Cerâmico em m²:", min_value=0.0, format="%.2f")
 adicionar_sobra2 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Cerâmico?", key='ceramico')
 if st.button("Calcular Orçamento para Piso Cerâmico"):
-    orcamento2, caixas_necessarias2 = calcular_orcamento(area2, 100.00, adicionar_sobra2, 2.18)
+    orcamento2, caixas_necessarias2 = calcular_orcamento(area2, 89.90, adicionar_sobra2, 2.18)
     st.success(f"### O orçamento total para o Piso Cerâmico é: R$ {orcamento2:.2f}")
     st.info(f"Você precisará de aproximadamente {caixas_necessarias2:.0f} caixas de Piso Cerâmico.")
