@@ -20,7 +20,7 @@ st.subheader("Piso Laminado Eucafloor Prime Click Carvalho Canela Cx 2,36m² (R$
 st.image("https://static.estilohomecenter.com.br/public/estilohomecenter/imagens/produtos/piso-laminado-eucafloor-carvalho-canela-prime-click-cx-2-36m2-6651f11b0ba71.jpg", caption="Ideal para: sala de estar/jantar, quartos, corredores.", use_column_width=True)
 area1 = st.number_input("Digite a área do piso Laminado em m²:", min_value=0.0, format="%.2f", key='area1')
 adicionar_sobra1 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Laminado?", key='laminado')
-if st.button("Calcular Orçamento para Piso Laminado"):
+if st.button("Calcular Orçamento para Piso Laminado", key='btn_laminado'):
     orcamento1, caixas_necessarias1 = calcular_orcamento(area1, 119.90, adicionar_sobra1, 2.36)
     st.success(f"O orçamento total para o Piso Laminado é: R$ {orcamento1:.2f}")
     st.info(f"Você precisará de aproximadamente {caixas_necessarias1:.0f} caixas de Piso Laminado.")
@@ -30,7 +30,7 @@ st.subheader("Piso Cerâmico Retificado 66x66 cm (R$ 89,90 por caixa de 2,18 m²
 st.image("https://telhanorte.vtexassets.com/arquivos/ids/1245914/7899436339296.jpg?v=638119047284200000", caption="Ideal para: cozinhas, banheiro, áreas externas cobertas, sala de estar/ jantar, corredores e Halls.", use_column_width=True)
 area2 = st.number_input("Digite a área do piso Cerâmico em m²:", min_value=0.0, format="%.2f", key='area2')
 adicionar_sobra2 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Cerâmico?", key='ceramico')
-if st.button("Calcular Orçamento para Piso Cerâmico"):
+if st.button("Calcular Orçamento para Piso Cerâmico", key='btn_ceramico'):
     orcamento2, caixas_necessarias2 = calcular_orcamento(area2, 89.90, adicionar_sobra2, 2.18)
     st.success(f"O orçamento total para o Piso Cerâmico é: R$ {orcamento2:.2f}")
     st.info(f"Você precisará de aproximadamente {caixas_necessarias2:.0f} caixas de Piso Cerâmico.")
@@ -40,7 +40,7 @@ st.subheader("Piso Cerâmico Pedra Acetinado Borda Arredondada Externo 61,5x61,5
 st.image("https://dcdn.mitiendanube.com/stores/002/797/263/products/piso-sao-tome-61x61-p1-a12fa27bc8dd7bbf5416763131496560-640-0.webp", caption="Ideal para: indicado para área externas como varandas, garagens, calçadas, áreas de lazer e jardins.", use_column_width=True)
 area3 = st.number_input("Digite a área do piso Cerâmico em m²:", min_value=0.0, format="%.2f", key='area3')
 adicionar_sobra3 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Cerâmico?", key='ceramico_pedra')
-if st.button("Calcular Orçamento para Piso Cerâmico"):
+if st.button("Calcular Orçamento para Piso Cerâmico", key='btn_ceramico2'):
     orcamento3, caixas_necessarias3 = calcular_orcamento(area3, 58.03, adicionar_sobra3, 2.65)
     st.success(f"O orçamento total para o Piso Cerâmico é: R$ {orcamento3:.2f}")
     st.info(f"Você precisará de aproximadamente {caixas_necessarias3:.0f} caixas de Piso Cerâmico.")
@@ -50,7 +50,7 @@ st.subheader("Piso Vinílico Vinil Forte Jacarandá 2x19x123cm (R$ 99,90 por cai
 st.image("https://cdn.dooca.store/116921/products/jacaranda-hd-19x123-modelo-1_1600x1600+fill_ffffff.jpg?v=1692322213", caption="Ideal para: áreas com baixa umidade como quartos, sala de estar/jantar, corredores e Halls.", use_column_width=True)
 area4 = st.number_input("Digite a área do piso Vinílico em m²:", min_value=0.0, format="%.2f", key='area4')
 adicionar_sobra4 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Vinílico?", key='vinilico')
-if st.button("Calcular Orçamento para Piso Vinílico"):
+if st.button("Calcular Orçamento para Piso Vinílico", key='btn_vinilico'):
     orcamento4, caixas_necessarias4 = calcular_orcamento(area4, 99.90, adicionar_sobra4, 4.72)
     st.success(f"O orçamento total para o Piso Vinílico é: R$ {orcamento4:.2f}")
     st.info(f"Você precisará de aproximadamente {caixas_necessarias4:.0f} caixas de Piso Vinílico.")
@@ -60,7 +60,7 @@ st.subheader("Piso Mont Blanc Satiny Retificado 101x101 cm (R$ 134,44 por caixa 
 st.image("https://telhanorte.vtexassets.com/arquivos/ids/1272049-1200-auto", caption="Ideal para: cozinhas, banheiros, áreas externas cobertas, hall de entrada e corredores.", use_column_width=True)
 area5 = st.number_input("Digite a área do piso Retificado em m²:", min_value=0.0, format="%.2f", key='area5')
 adicionar_sobra5 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Retificado?", key='retificado')
-if st.button("Calcular Orçamento para Piso Retificado"):
+if st.button("Calcular Orçamento para Piso Retificado", key='btn_retificado'):
     orcamento5, caixas_necessarias5 = calcular_orcamento(area5, 134.44, adicionar_sobra5, 2.04)
     st.success(f"O orçamento total para o Piso Retificado é: R$ {orcamento5:.2f}")
     st.info(f"Você precisará de aproximadamente {caixas_necessarias5:.0f} caixas de Piso Retificado.")
@@ -70,7 +70,7 @@ st.subheader("Porcelanato Cimentício Acetinado Borda Arredondada Externo 60x60c
 st.image("https://telhanorte.vtexassets.com/arquivos/ids/1272049-1200-auto", caption="Ideal para: áreas de piscina, garagens externas, calçadas e passarelas.", use_column_width=True)
 area6 = st.number_input("Digite a área do piso Porcelanato em m²:", min_value=0.0, format="%.2f", key='area6')
 adicionar_sobra6 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Porcelanato?", key='porcelanato')
-if st.button("Calcular Orçamento para Piso Porcelanato"):
+if st.button("Calcular Orçamento para Piso Porcelanato", key='btn_porcelanato'):
     orcamento6, caixas_necessarias6 = calcular_orcamento(area6, 152.12, adicionar_sobra6, 1.8)
     st.success(f"O orçamento total para o Piso Porcelanato é: R$ {orcamento6:.2f}")
-    st.info(f"Você precisará de aproximadamente {caixas_necessarias6:.0f} caixas de Piso Porcelanato.")
+    st.info(f"Você precisará de aproximadamente {caixas_necessarias6:.0f
