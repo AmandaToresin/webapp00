@@ -74,3 +74,13 @@ if st.button("Calcular Orçamento para Piso Porcelanato", key='btn_porcelanato')
     orcamento6, caixas_necessarias6 = calcular_orcamento(area6, 152.12, adicionar_sobra6, 1.8)
     st.success(f"O orçamento total para o Piso Porcelanato é: R$ {orcamento6:.2f}")
     st.info(f"Você precisará de aproximadamente {caixas_necessarias6:.0f} caixas de Piso Porcelanato.")
+
+# Sétimo Piso - Porcelanato Marmorizado
+st.subheader("Porcelanato Marmorizado Acetinado Borda Reta Interno 91x91cm (R$ 151,30 por caixa de 2,48m²)")
+st.image("https://cdn.leroymerlin.com.br/products/porcelanato_acetinado_interno_91x91cm_blush_artens_92271886_6991_600x600.jpg", caption="Ideal para: sala de estar/jantar, cozinhas e banheiros internos, escritórios e ambientes comerciais, corredores e Halls.", use_column_width=True)
+area7 = st.number_input("Digite a área do Porcelanato Marmorizado em m²:", min_value=0.0, format="%.2f", key='area7')
+adicionar_sobra7 = st.checkbox("Deseja adicionar 20% de sobra ao Porcelanato Marmorizado?", key='marmorizado')
+if st.button("Calcular Orçamento para Porcelanato Marmorizado", key='btn_marmorizado'):
+    orcamento7, caixas_necessarias7 = calcular_orcamento(area7, 151.30, adicionar_sobra7, 2.48)
+    st.success(f"O orçamento total para o Porcelanato Marmorizado é: R$ {orcamento7:.2f}")
+    st.info(f"Você precisará de aproximadamente {caixas_necessarias7:.0f} caixas de Porcelanato Marmorizado.")
