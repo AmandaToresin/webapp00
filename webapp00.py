@@ -104,3 +104,14 @@ if st.button("Calcular Orçamento para Porcelanato Decorado", key='btn_decorado'
     orcamento9, caixas_necessarias9 = calcular_orcamento(area9, 121.50, adicionar_sobra9, 2.59)
     st.success(f"O orçamento total para o Porcelanato Decorado é: R$ {orcamento9:.2f}")
     st.info(f"Você precisará de aproximadamente {caixas_necessarias9:.0f} caixas de Porcelanato Decorado.")
+
+# Décimo Piso - Piso Interno Granito Casablanca
+st.subheader("Piso Interno Granito Casablanca Branco 57x57cm Extrata Stones (R$ 394,71 por caixa de 0,975m²)")
+st.image("https://cdn.leroymerlin.com.br/products/piso_ext_granito_casablanca_branco_57x57_m2_extratatones_91789663_91df_600x600.png", caption="Ideal para: áreas internas de alto padrão, como salas de estar/jantar, cozinhas gourmet, banheiros luxuosos, escritórios e hall de entrada.", use_column_width=True)
+area10 = st.number_input("Digite a área do Piso Interno Granito Casablanca em m²:", min_value=0.0, format="%.2f", key='area10')
+adicionar_sobra10 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Interno Granito Casablanca?", key='granito_casablanca')
+if st.button("Calcular Orçamento para Piso Interno Granito Casablanca", key='btn_granito_casablanca'):
+    orcamento10, caixas_necessarias10 = calcular_orcamento(area10, 394.71, adicionar_sobra10, 0.975)
+    st.success(f"O orçamento total para o Piso Interno Granito Casablanca é: R$ {orcamento10:.2f}")
+    st.info(f"Você precisará de aproximadamente {caixas_necessarias10:.0f} caixas de Piso Interno Granito Casablanca.")
+
