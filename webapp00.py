@@ -90,7 +90,7 @@ pisos = {
 }
 
 # Adicionando o filtro para selecionar a categoria de piso
-categoria_piso = st.selectbox("Selecione a categoria de piso", ["Todos", "Porcelanato", "Cerâmico", "Vinílico", "Retificado"])
+categoria_piso = st.selectbox("Selecione a categoria de piso", ["Todos", "Porcelanato", "Cerâmico", "Vinílico", "Retificado", "Granito"])
 
 # Função para exibir os pisos com base na categoria selecionada
 def exibir_pisos(categoria):
