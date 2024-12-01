@@ -134,15 +134,6 @@ pisos = {
             "imagem": "https://cdn.leroymerlin.com.br/products/piso_laminado_click_adoro_affara_crema_25x135,7cm_m2_92158465_622e_600x600.jpg",
             "descricao": "Ideal para: áreas com baixa umidade como quartos, sala de estar/jantar, corredores e Halls."
         }
-    ],
-    "Granito": [
-        {
-          "nome": "Piso Interno Granito Casablanca Branco 57x57cm Extrata Stones (Caixa com 0,975m² por R$394,71)",
-          "preco_por_caixa": 394.71,
-          "area_por_caixa": 0.975,
-          "imagem": "https://cdn.leroymerlin.com.br/products/piso_ext_granito_casablanca_branco_57x57_m2_extratatones_91789663_91df_600x600.png",
-          "descricao": "Ideal para: áreas internas de alto padrão, como salas de estar/jantar, cozinhas gourmet, banheiros luxuosos, escritórios e hall de entrada."
-        }
     ]
 }
 
@@ -163,7 +154,7 @@ def exibir_informacoes_piso(piso, categoria, idx):
         st.info(f"Você precisará de aproximadamente {caixas_necessarias:.0f} caixas de {piso['nome']}.")
 
 # Criando as abas para cada tipo de piso
-abas = st.tabs(["Todos", "Laminado", "Cerâmico", "Vinílico", "Porcelanato", "Granito"])
+abas = st.tabs(["Todos", "Laminado", "Cerâmico", "Vinílico", "Porcelanato"])
 
 # Adicionando conteúdo a cada aba
 with abas[0]:
@@ -191,8 +182,3 @@ with abas[4]:
     st.header("Porcelanato")
     for idx, piso in enumerate(pisos["Porcelanato"]):
         exibir_informacoes_piso(piso, "Porcelanato", idx)
-
-with abas[5]:
-    st.header("Granito")
-    for idx, piso in enumerate(pisos["Granito"]):
-        exibir_informacoes_piso(piso, "Granito", idx)
