@@ -10,7 +10,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url("https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=600");
+        background-image: url("https://www.creativefabrica.com/wp-content/uploads/2022/03/15/Concrete-Cement-Texture-Graphics-27184470-1-1-580x387.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
