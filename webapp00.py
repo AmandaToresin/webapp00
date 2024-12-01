@@ -113,23 +113,6 @@ def exibir_pisos(categoria):
 # Exibindo os pisos com base na categoria selecionada
 exibir_pisos(categoria_piso)
 
-
-# Cidades ao redor de Jundiaí com frete especial de R$ 50,00
-cidades_ao_redor = ["Jundiaí", "Itupeva", "Vinhedo", "Valinhos", "Campinas", "Várzea Paulista", "Campo Limpo Paulista", "Louveira", "Jarinu"]
-
-# Adicionando campo para selecionar a cidade de entrega
-cidade_entrega = st.text_input("Digite a cidade de entrega:", "")
-
-# Função para calcular o frete
-def calcular_frete(cidade):
-    if cidade in cidades_ao_redor:
-        return 50.00
-    elif cidade:  # Verifica se a cidade foi preenchida e é válida
-        return 150.00
-    else:
-        return 0.00
-
-
 # Primeiro Piso - Piso Laminado
 st.subheader("Piso Laminado Eucafloor Prime Click Carvalho Canela Cx 2,36m² (R$ 119,90 por caixa de 2,36 m²)")
 st.image("https://static.estilohomecenter.com.br/public/estilohomecenter/imagens/produtos/piso-laminado-eucafloor-carvalho-canela-prime-click-cx-2-36m2-6651f11b0ba71.jpg", caption="Ideal para: sala de estar/jantar, quartos, corredores.", use_column_width=True)
