@@ -21,11 +21,16 @@ st.markdown(
     .stApp * {
         color: black !important;
     }
+
+    /* Estilizando as caixas de entrada para manter o fundo branco e texto preto */
+    input {
+        background-color: white !important;
+        color: black !important;
+    }
     </style>
     """,
     unsafe_allow_html=True
 )
-
 
 def calcular_orcamento(area, preco_por_caixa, adicionar_sobra, area_por_caixa):
     if adicionar_sobra:
