@@ -10,8 +10,10 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.jeitodegente.com.br%2Fimagens-fundo-banner-site-03%2F&psig=AOvVaw3ILkmKtLaJd91FSbPkizsu&ust=1733167637106000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKiF7uSmh4oDFQAAAAAdAAAAABAJ');
+        background-image: url("https://www.jeitodegente.com.br/wp-content/uploads/2018/03/imagens-fundo-banner-site-03.png");
         background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
     </style>
     """,
