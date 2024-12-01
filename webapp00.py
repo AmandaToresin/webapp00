@@ -10,7 +10,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url("https://img.freepik.com/fotos-gratis/textura-da-parede-de-gesso_1154-716.jpg");
+        background-image: url("https://img.freepik.com/fotos-gratis/fundo-colorido-desfocado-vivido_58702-2655.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
