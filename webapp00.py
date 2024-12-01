@@ -31,7 +31,7 @@ area1 = st.number_input("Digite a área do piso Laminado em m²:", min_value=0.0
 adicionar_sobra1 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Laminado?", key='laminado')
 if st.button("Calcular Orçamento para Piso Laminado"):
     orcamento1, caixas_necessarias1 = calcular_orcamento(area1, 100.00, adicionar_sobra1, 2.36)
-    st.success(f"### O orçamento total para o Piso Laminado é: R$ {orcamento1:.2f}")
+    st.success(f"O orçamento total para o Piso Laminado é: R$ {orcamento1:.2f}")
     st.info(f"Você precisará de aproximadamente {caixas_necessarias1:.0f} caixas de Piso Laminado.")
 
 # Segundo Piso - Piso Cerâmico
@@ -41,7 +41,7 @@ area2 = st.number_input("Digite a área do piso Cerâmico em m²:", min_value=0.
 adicionar_sobra2 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Cerâmico?", key='ceramico')
 if st.button("Calcular Orçamento para Piso Cerâmico"):
     orcamento2, caixas_necessarias2 = calcular_orcamento(area2, 89.90, adicionar_sobra2, 2.18)
-    st.success(f"### O orçamento total para o Piso Cerâmico é: R$ {orcamento2:.2f}")
+    st.success(f"O orçamento total para o Piso Cerâmico é: R$ {orcamento2:.2f}")
     st.info(f"Você precisará de aproximadamente {caixas_necessarias2:.0f} caixas de Piso Cerâmico.")
 
 # Terceiro Piso - Piso Vinílico
@@ -51,15 +51,15 @@ area3 = st.number_input("Digite a área do piso Vinílico em m²:", min_value=0.
 adicionar_sobra3 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Vinílico?", key='vinilico')
 if st.button("Calcular Orçamento para Piso Vinílico"):
     orcamento3, caixas_necessarias3 = calcular_orcamento(area3, 99.90, adicionar_sobra3, 4.72)
-    st.success(f"### O orçamento total para o Piso Vinílico é: R$ {orcamento3:.2f}")
+    st.success(f"O orçamento total para o Piso Vinílico é: R$ {orcamento3:.2f}")
     st.info(f"Você precisará de aproximadamente {caixas_necessarias3:.0f} caixas de Piso Vinílico.")
 
- # Quarto Piso - Piso Retificado
- st.subheader("Piso Mont Blanc Satiny Retificado 101x101 cm (RS 134,44 por caixa de 2,04 m2)")
+# Quarto Piso - Piso Retificado
+st.subheader("Piso Mont Blanc Satiny Retificado 101x101 cm (RS 134,44 por caixa de 2,04 m2)")
 st.image("https://telhanorte.vtexassets.com/arquivos/ids/1272049-1200-auto", caption="Ideal para: cozinhas, banheiros, áreas externas cobertas, hall de entrada e corredores.", use_column_width=True)
-area3 = st.number_input("Digite a área do piso Retificado em m²:", min_value=0.0, format="%.2f")
-adicionar_sobra3 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Retificado?", key='vinilico')
+area4 = st.number_input("Digite a área do piso Retificado em m²:", min_value=0.0, format="%.2f")
+adicionar_sobra4 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Retificado?", key='retificado')
 if st.button("Calcular Orçamento para Piso Retificado"):
-    orcamento3, caixas_necessarias3 = calcular_orcamento(area3, 99.90, adicionar_sobra3, 2.04)
-    st.success(f"### O orçamento total para o Piso Retificado é: R$ {orcamento3:.2f}")
-    st.info(f"Você precisará de aproximadamente {caixas_necessarias3:.0f} caixas de Piso Retificado.")
+    orcamento4, caixas_necessarias4 = calcular_orcamento(area4, 134.44, adicionar_sobra4, 2.04)
+    st.success(f"O orçamento total para o Piso Retificado é: R$ {orcamento4:.2f}")
+    st.info(f"Você precisará de aproximadamente {caixas_necessarias4:.0f} caixas de Piso Retificado.")
