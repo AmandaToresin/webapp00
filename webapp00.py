@@ -1,22 +1,7 @@
 import streamlit as st
 
 # Centralizando a imagem
-st.markdown(
-    """
-    <style>
-    .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;  /* Ajuste a largura conforme necessário */
-    }
-    </style>
-    <img src="https://pbs.twimg.com/media/GdvgKdOWoAAmogZ?format=jpg&name=small" class="center">
-    """,
-    unsafe_allow_html=True
-)
-
-st.header("🔷 Calculadora de Pisos")
+st.imagem("https://pbs.twimg.com/media/GdvhVJeXYAEvUi4?format=jpg&name=small")
 st.write(
     """
     Bem-vindo ao nosso calculador de orçamento de piso! Aqui, você pode calcular de forma rápida e fácil quanto vai gastar para revestir sua área com pisos de sua escolha. 
