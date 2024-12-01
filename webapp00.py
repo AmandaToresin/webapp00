@@ -21,7 +21,7 @@ pisos = {
             "area_por_caixa": 2.36,
             "imagem": "https://static.estilohomecenter.com.br/public/estilohomecenter/imagens/produtos/piso-laminado-eucafloor-carvalho-canela-prime-click-cx-2-36m2-6651f11b0ba71.jpg",
             "descricao": "Ideal para: sala de estar/jantar, quartos, corredores."
-        },
+        }
     ],
             
     "Porcelanato": [
