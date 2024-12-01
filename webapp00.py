@@ -14,6 +14,16 @@ def calcular_orcamento(area, preco_por_caixa, adicionar_sobra, area_por_caixa):
 
 # Definindo os tipos de piso e suas características
 pisos = {
+    "Laminado": [
+        {
+            "nome": "Piso Laminado Eucafloor Prime Click Carvalho Canela",
+            "preco_por_caixa": 119.90,
+            "area_por_caixa": 2.36,
+            "imagem": "https://static.estilohomecenter.com.br/public/estilohomecenter/imagens/produtos/piso-laminado-eucafloor-carvalho-canela-prime-click-cx-2-36m2-6651f11b0ba71.jpg",
+            "descricao": "Ideal para: sala de estar/jantar, quartos, corredores."
+        },
+    ],
+            
     "Porcelanato": [
         {
             "nome": "Porcelanato Cimentício Acetinado Borda Arredondada Externo 60x60cm",
@@ -90,10 +100,10 @@ pisos = {
 }
 
 # Adicionando o filtro para selecionar a categoria de piso
-categoria_piso = st.selectbox("Selecione a categoria de piso", ["Todos", "Porcelanato", "Cerâmico", "Vinílico", "Retificado", "Granito","laminado"])
+categoria_piso = st.selectbox("Selecione a categoria de piso", ["Todos", "Laminado", "Porcelanato", "Cerâmico", "Vinílico", "Retificado", "Granito"])
 
 # Criando as abas para cada tipo de piso
-abas = st.tabs(["Laminado", "Cerâmico", "Vinílico", "Porcelanato", "Granito","Todos"])
+abas = st.tabs(["Todos", "Laminado", "Cerâmico", "Vinílico", "Porcelanato", "Granito"])
 
 # Função para exibir informações do piso
 def exibir_informacoes_piso(pisos):
