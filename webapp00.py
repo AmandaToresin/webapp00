@@ -73,4 +73,4 @@ adicionar_sobra6 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Porcelanat
 if st.button("Calcular Orçamento para Piso Porcelanato", key='btn_porcelanato'):
     orcamento6, caixas_necessarias6 = calcular_orcamento(area6, 152.12, adicionar_sobra6, 1.8)
     st.success(f"O orçamento total para o Piso Porcelanato é: R$ {orcamento6:.2f}")
-    st.info(f"Você precisará de aproximadamente {caixas_necessarias6:.0f
+    st.info(f"Você precisará de aproximadamente {caixas_necessarias6:.0f} caixas de Piso Porcelanato.")
