@@ -11,7 +11,7 @@ st.write(
     """
 )
 
-
+#calculo padrao para todos os modelos
 def calcular_orcamento(area, preco_por_caixa, adicionar_sobra, area_por_caixa):
     if adicionar_sobra:
         area *= 1.20  # Adiciona 20% à área total
@@ -146,6 +146,7 @@ pisos = {
 # Contador global para gerar chaves únicas
 contador = 0
 
+#exibindo resultado
 def exibir_informacoes_piso(piso, categoria, idx):
     global contador
     contador += 1
