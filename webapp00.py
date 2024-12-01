@@ -1,25 +1,6 @@
 import streamlit as st
 
-import streamlit as st
-
-# Adicionando CSS para centralizar a imagem e definir sua forma
-st.markdown(
-    """
-    <style>
-    .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%; /* Altere o valor conforme necessário */
-        border-radius: 10px; /* Define cantos arredondados para a imagem */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 # Exibindo a imagem centralizada e retangular
-st.image("https://pbs.twimg.com/media/GdveWw2XUAAO1Bf?format=png&name=small", use_column_width=False, caption="mabil", output_format="PNG")
 st.markdown('<img src="https://pbs.twimg.com/media/GdveWw2XUAAO1Bf?format=png&name=small" class="center">', unsafe_allow_html=True)
 
 st.header("🔷 Calculadora de Pisos")
