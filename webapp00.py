@@ -55,7 +55,7 @@ if st.button("Calcular Orçamento para Piso Vinílico"):
     st.info(f"Você precisará de aproximadamente {caixas_necessarias3:.0f} caixas de Piso Vinílico.")
 
  # Quarto Piso - Piso Retificado
- st.subheader("Piso Mont Blanc Satiny Retificado 101X101 cm (RS 134,44 por caixa de 2,04 m2)")
+ st.subheader("Piso Mont Blanc Satiny Retificado 101x101 cm (RS 134,44 por caixa de 2,04 m2)")
 st.image("https://telhanorte.vtexassets.com/arquivos/ids/1272049-1200-auto", caption="Ideal para: cozinhas, banheiros, áreas externas cobertas, hall de entrada e corredores.", use_column_width=True)
 area3 = st.number_input("Digite a área do piso Retificado em m²:", min_value=0.0, format="%.2f")
 adicionar_sobra3 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Retificado?", key='vinilico')
