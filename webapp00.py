@@ -67,7 +67,7 @@ if st.button("Calcular Orçamento para Piso Retificado", key='btn_retificado'):
 
 # Sexto Piso - Piso Porcelanato
 st.subheader("Porcelanato Cimentício Acetinado Borda Arredondada Externo 60x60cm (R$ 152,12 por caixa de 1,8m²)")
-st.image("https://telhanorte.vtexassets.com/arquivos/ids/1272049-1200-auto", caption="Ideal para: áreas de piscina, garagens externas, calçadas e passarelas.", use_column_width=True)
+st.image("https://cdagua.vtexassets.com/arquivos/ids/203687-800-800?v=638612236070930000&width=800&height=800&aspect=true", caption="Ideal para: áreas de piscina, garagens externas, calçadas e passarelas.", use_column_width=True)
 area6 = st.number_input("Digite a área do piso Porcelanato em m²:", min_value=0.0, format="%.2f", key='area6')
 adicionar_sobra6 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Porcelanato?", key='porcelanato')
 if st.button("Calcular Orçamento para Piso Porcelanato", key='btn_porcelanato'):
