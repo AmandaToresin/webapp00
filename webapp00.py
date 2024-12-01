@@ -27,10 +27,22 @@ st.markdown(
         background-color: white !important;
         color: black !important;
     }
+
+    /* Estilizando os elementos de texto nas caixas de entrada */
+    .css-1dp5vir {
+        color: black !important;
+    }
+
+    /* Estilizando os botões */
+    button {
+        background-color: #4CAF50; /* Verde */
+        color: white !important; /* Texto branco */
+    }
     </style>
     """,
     unsafe_allow_html=True
 )
+
 
 def calcular_orcamento(area, preco_por_caixa, adicionar_sobra, area_por_caixa):
     if adicionar_sobra:
