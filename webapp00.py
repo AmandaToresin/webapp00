@@ -83,7 +83,14 @@ pisos = {
             "preco_por_caixa": 347.24,
             "area_por_caixa": 4.09,
             "imagem": "https://cdn.leroymerlin.com.br/products/piso_pvc_vini_injoy_papola_20,8x2x1,23_m2_tarkett_91068600_8007_600x600.jpg",
-            "descricao": "Ideal para: sala de estar/jantar, quartos, corredores."
+            "descricao": "Ideal para: áreas com baixa umidade como quartos, sala de estar/jantar, corredores e Halls."
+        },
+        {
+            "nome": "PISO VÍNILICO COLADO CARVALHO SUPREME 1,22M X 18CM(Caixa com 4,645m² por R$395,25)",
+            "preco_por_caixa": 395.23,
+            "area_por_caixa": 4.645,
+            "imagem": "https://cdn.leroymerlin.com.br/products/piso_vinilico_colado_carvalho_supreme_1,22m_x_18cm_caixa_4,64_1571973568_7b0f_600x600.png",
+            "descricao": "Ideal para: áreas com baixa umidade como quartos, sala de estar/jantar, corredores e Halls."
         }
     ],
     "Retificado": [
