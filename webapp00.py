@@ -68,6 +68,20 @@ pisos = {
             "area_por_caixa": 2.65,
             "imagem": "https://dcdn.mitiendanube.com/stores/002/797/263/products/piso-sao-tome-61x61-p1-a12fa27bc8dd7bbf5416763131496560-640-0.webp",
             "descricao": "Ideal para: indicado para área externas como varandas, garagens, calçadas, áreas de lazer e jardins."
+        },
+        {
+            "nome": "Piso Cerâmico Cimentício Borda Reta Externo 60,5x60,5cm Nevada (Caixa com 2,52m² por R$24,90)",
+            "preco_por_caixa": 24.90,
+            "area_por_caixa": 2.52,
+            "imagem": "https://cdn.leroymerlin.com.br/products/piso_ceramico_cimenticio_acetinado_60,5x60,5_nevada_out_91801150_074d_600x600.jpg",
+            "descricao": "Ideal para: indicado para área externas como varandas, garagens, calçadas, áreas de lazer e jardins."
+        },
+        {
+            "nome": "Piso Cerâmico Marmorizado Brilhante Borda Reta Interno 82x82 (Caixa com 2,69m² por R$31,87)",
+            "preco_por_caixa": 31.87,
+            "area_por_caixa": 2.69,
+            "imagem": "",
+            "descricao": "Ideal para: indicado para área externas como varandas, garagens, calçadas, áreas de lazer e jardins."
         }
     ],
     "Vinílico": [
@@ -90,6 +104,13 @@ pisos = {
             "preco_por_caixa": 395.23,
             "area_por_caixa": 4.645,
             "imagem": "https://cdn.leroymerlin.com.br/products/piso_vinilico_colado_carvalho_supreme_1,22m_x_18cm_caixa_4,64_1571973568_7b0f_600x600.png",
+            "descricao": "Ideal para: áreas com baixa umidade como quartos, sala de estar/jantar, corredores e Halls."
+        },
+        {
+            "nome": "Piso Vinílico Rígido Click Intenso Stone Pedra Preto (Caixa com 1,49m² por R$112,70)",
+            "preco_por_caixa": 112.70,
+            "area_por_caixa": 1.49,
+            "imagem": "https://cdn.leroymerlin.com.br/products/piso_vinilico_click_30,5x61cm_stone_m2_artens_91804671_0004_600x600.jpg",
             "descricao": "Ideal para: áreas com baixa umidade como quartos, sala de estar/jantar, corredores e Halls."
         }
     ],
