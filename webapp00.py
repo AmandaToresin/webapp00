@@ -26,7 +26,7 @@ def calcular_orcamento(area, preco_por_caixa, adicionar_sobra, area_por_caixa):
 
 # Primeiro Piso - Piso Laminado
 st.subheader("Piso Laminado Eucafloor Prime Click Carvalho Canela Cx 2,36m² (R$ 119,90 por caixa de 2,36 m²)")
-st.image("https://static.estilohomecenter.com.br/public/estilohomecenter/imagens/produtos/piso-laminado-eucafloor-carvalho-canela-prime-click-cx-2-36m2-6651f11b0ba71.jpg", caption="Piso Laminado", use_column_width=True)
+st.image("https://static.estilohomecenter.com.br/public/estilohomecenter/imagens/produtos/piso-laminado-eucafloor-carvalho-canela-prime-click-cx-2-36m2-6651f11b0ba71.jpg", caption="Ideal para: sala de estar/jantar, quartos, corredores.", use_column_width=True)
 area1 = st.number_input("Digite a área do piso Laminado em m²:", min_value=0.0, format="%.2f")
 adicionar_sobra1 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Laminado?", key='laminado')
 if st.button("Calcular Orçamento para Piso Laminado"):
@@ -36,7 +36,7 @@ if st.button("Calcular Orçamento para Piso Laminado"):
 
 # Segundo Piso - Piso Cerâmico
 st.subheader("Piso Cerâmico Retificado 66x66 cm (R$ 89,90 por caixa de 2,18 m²)")
-st.image("https://telhanorte.vtexassets.com/arquivos/ids/1245914/7899436339296.jpg?v=638119047284200000", caption="Piso Cerâmico", use_column_width=True)
+st.image("https://telhanorte.vtexassets.com/arquivos/ids/1245914/7899436339296.jpg?v=638119047284200000", caption="Ideal para: cozinhas, banheiro, áreas externas cobertas, sala de estar/ jantar, corredores e Halls.", use_column_width=True)
 area2 = st.number_input("Digite a área do piso Cerâmico em m²:", min_value=0.0, format="%.2f")
 adicionar_sobra2 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Cerâmico?", key='ceramico')
 if st.button("Calcular Orçamento para Piso Cerâmico"):
@@ -45,11 +45,23 @@ if st.button("Calcular Orçamento para Piso Cerâmico"):
     st.info(f"Você precisará de aproximadamente {caixas_necessarias2:.0f} caixas de Piso Cerâmico.")
 
 # Terceiro Piso - Piso Vinílico
-st.subheader("Piso Vinílico Vinil Forte Jacarandá 2x19x123cm Cx 4.72m² (R$ 99,90 por caixa)")
-st.image("https://cdn.dooca.store/116921/products/jacaranda-hd-19x123-modelo-1_1600x1600+fill_ffffff.jpg?v=1692322213", caption="Ideal para: áreas com baixa umidade como quartos, sala de estar/jantar, corredores e Halls", use_column_width=True)
+st.subheader("Piso Vinílico Vinil Forte Jacarandá 2x19x123cm (R$ 99,90 por caixa de 4,72m²)")
+st.image("https://cdn.dooca.store/116921/products/jacaranda-hd-19x123-modelo-1_1600x1600+fill_ffffff.jpg?v=1692322213", caption="Ideal para: áreas com baixa umidade como quartos, sala de estar/jantar, corredores e Halls.", use_column_width=True)
 area3 = st.number_input("Digite a área do piso Vinílico em m²:", min_value=0.0, format="%.2f")
 adicionar_sobra3 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Vinílico?", key='vinilico')
 if st.button("Calcular Orçamento para Piso Vinílico"):
     orcamento3, caixas_necessarias3 = calcular_orcamento(area3, 99.90, adicionar_sobra3, 4.72)
     st.success(f"### O orçamento total para o Piso Vinílico é: R$ {orcamento3:.2f}")
     st.info(f"Você precisará de aproximadamente {caixas_necessarias3:.0f} caixas de Piso Vinílico.")
+
+ # Quarto Piso - Piso Retificado
+ st.subheader("Piso Mont Blanc Satiny Retificado 101X101 cm (RS 134,44 por caixa de 2,04 m2)")
+st.image("https://telhanorte.vtexassets.com/arquivos/ids/1272049-1200-auto", caption="Ideal para: cozinhas, banheiros, áreas externas cobertas, hall de entrada e corredores.", use_column_width=True)
+area3 = st.number_input("Digite a área do piso Retificado em m²:", min_value=0.0, format="%.2f")
+adicionar_sobra3 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Retificado?", key='vinilico')
+if st.button("Calcular Orçamento para Piso Retificado"):
+    orcamento3, caixas_necessarias3 = calcular_orcamento(area3, 99.90, adicionar_sobra3, 4.72)
+    st.success(f"### O orçamento total para o Piso Retificado é: R$ {orcamento3:.2f}")
+    st.info(f"Você precisará de aproximadamente {caixas_necessarias3:.0f} caixas de Piso Retificado.")
+
+#Quinto Piso - 
