@@ -5,6 +5,19 @@ st.title("MABIL")
 st.header("🔷 Calculadora de Pisos")
 st.write("Bem-vindo ao nosso calculador de orçamento de piso! Aqui, você pode calcular de forma rápida e fácil quanto vai gastar para revestir sua área com pisos de sua escolha. Informe a metragem quadrada do ambiente, selecione o tipo de piso e obtenha uma estimativa precisa do custo total. Nosso objetivo é tornar o processo de planejamento da reforma mais simples e transparente, ajudando você a tomar decisões informadas e adequadas ao seu orçamento. Comece agora e descubra quanto seu projeto vai custar!")
 
+# Adicionando CSS para estilizar o fundo
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.jeitodegente.com.br%2Fimagens-fundo-banner-site-03%2F&psig=AOvVaw3ILkmKtLaJd91FSbPkizsu&ust=1733167637106000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKiF7uSmh4oDFQAAAAAdAAAAABAJ');
+        background-size: cover;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 def calcular_orcamento(area, preco_por_caixa, adicionar_sobra, area_por_caixa):
     if adicionar_sobra:
         area *= 1.20  # Adiciona 20% à área total
