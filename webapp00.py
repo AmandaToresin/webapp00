@@ -95,3 +95,12 @@ if st.button("Calcular Orçamento para Porcelanato Marmorizado Polido", key='btn
     st.success(f"O orçamento total para o Porcelanato Marmorizado Polido é: R$ {orcamento8:.2f}")
     st.info(f"Você precisará de aproximadamente {caixas_necessarias8:.0f} caixas de Porcelanato Marmorizado Polido.")
 
+# Nono Piso - Porcelanato Decorado
+st.subheader("Porcelanato Decorado Acetinado Borda Reta Externo 72x72cm (R$ 121,50 por caixa de 2,59m²)")
+st.image("https://d365e82sgxmduv.cloudfront.net/Custom/Content/Products/23/32/2332883_29549-porcelanato-cairo-externo-rust-72x72-cx2-59m-72111281-savane_z5_638300284526519484.webp", caption="Ideal para: varandas e pátios, áreas de piscina, calçada e passarelas, jardins e áreas de convivência externas", use_column_width=True)
+area9 = st.number_input("Digite a área do Porcelanato Decorado em m²:", min_value=0.0, format="%.2f", key='area9')
+adicionar_sobra9 = st.checkbox("Deseja adicionar 20% de sobra ao Porcelanato Decorado?", key='decorado')
+if st.button("Calcular Orçamento para Porcelanato Decorado", key='btn_decorado'):
+    orcamento9, caixas_necessarias9 = calcular_orcamento(area9, 121.50, adicionar_sobra9, 2.59)
+    st.success(f"O orçamento total para o Porcelanato Decorado é: R$ {orcamento9:.2f}")
+    st.info(f"Você precisará de aproximadamente {caixas_necessarias9:.0f} caixas de Porcelanato Decorado.")
