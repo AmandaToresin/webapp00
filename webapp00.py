@@ -128,20 +128,11 @@ pisos = {
             "descricao": "Ideal para: áreas com baixa umidade como quartos, sala de estar/jantar, corredores e Halls."
         },
         {
-            "nome": "Piso Vinílico Rígido Click Intenso Stone Pedra Preto (Caixa com 1,49m² por R$112,70)",
-            "preco_por_caixa": 112.70,
-            "area_por_caixa": 1.49,
-            "imagem": "https://cdn.leroymerlin.com.br/products/piso_vinilico_click_30,5x61cm_stone_m2_artens_91804671_0004_600x600.jpg",
+            "nome": "Piso Laminado Click Affara Crema 25x135,7cm (Caixa com 2,71m² por R$49,90)",
+            "preco_por_caixa": 49.90,
+            "area_por_caixa": 2.71,
+            "imagem": "https://cdn.leroymerlin.com.br/products/piso_laminado_click_adoro_affara_crema_25x135,7cm_m2_92158465_622e_600x600.jpg",
             "descricao": "Ideal para: áreas com baixa umidade como quartos, sala de estar/jantar, corredores e Halls."
-        }
-    ],
-    "Retificado": [
-        {
-          "nome": "Piso Mont Blanc Satiny Retificado 101x101cm (Caixa com 2,04m² por R$134,44)",
-          "preco_por_caixa": 134.44,
-          "area_por_caixa": 2.04,
-          "imagem": "https://telhanorte.vtexassets.com/arquivos/ids/1272049-1200-auto",
-          "descricao": "Ideal para: cozinhas, banheiros, áreas externas cobertas, hall de entrada e corredores."
         }
     ],
     "Granito": [
