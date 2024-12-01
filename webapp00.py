@@ -61,7 +61,9 @@ pisos = {
           "preco_por_caixa": 134.44,
           "area_por_caixa": 2.04,
           "imagem": "https://telhanorte.vtexassets.com/arquivos/ids/1272049-1200-auto",
-          "descricao": "Ideal para: cozinhas, banheiros, áreas externas cobertas, hall de entrada e corredores."  
+          "descricao": "Ideal para: cozinhas, banheiros, áreas externas cobertas, hall de entrada e corredores."
+        }
+    ]
 }
 
 # Adicionando o filtro para selecionar a categoria de piso
