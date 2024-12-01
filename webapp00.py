@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Adicionando uma imagem
-st.image('https://pbs.twimg.com/media/GdvhVJeXYAEvUi4?format=jpg&name=small', caption='Cálculo de Orçamento de Piso')
+st.image('https://pbs.twimg.com/media/GdvhVJeXYAEvUi4?format=jpg&name=small')
 st.write(
     """
     Bem-vindo ao nosso calculador de orçamento de piso! Aqui, você pode calcular de forma rápida e fácil quanto vai gastar para revestir sua área com pisos de sua escolha. 
