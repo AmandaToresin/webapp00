@@ -17,37 +17,44 @@ def calcular_orcamento(area, preco_por_caixa, adicionar_sobra, area_por_caixa):
 pisos = {
     "Laminado": [
         {
-            "nome": "Piso Laminado Eucafloor Prime Click Carvalho Canela",
-            "preco_por_caixa": 119.90,
+            "nome": "Piso Laminado Eucafloor Prime Click Carvalho Canela (Caixa com 2,36m² por R$219,90)",
+            "preco_por_caixa": 219.90,
             "area_por_caixa": 2.36,
             "imagem": "https://static.estilohomecenter.com.br/public/estilohomecenter/imagens/produtos/piso-laminado-eucafloor-carvalho-canela-prime-click-cx-2-36m2-6651f11b0ba71.jpg",
+            "descricao": "Ideal para: sala de estar/jantar, quartos, corredores."
+        },
+        {
+            "nome": "Piso Laminado Eucafloor Prime Click Carvalho Canela(Caixa com 4,09m² por R$347,24)",
+            "preco_por_caixa": 347,24,
+            "area_por_caixa": 4.09m,
+            "imagem": "https://cdn.leroymerlin.com.br/products/piso_pvc_vini_injoy_papola_20,8x2x1,23_m2_tarkett_91068600_8007_600x600.jpg",
             "descricao": "Ideal para: sala de estar/jantar, quartos, corredores."
         }
     ],
     "Porcelanato": [
         {
-            "nome": "Porcelanato Cimentício Acetinado Borda Arredondada Externo 60x60cm",
+            "nome": "Porcelanato Cimentício Acetinado Borda Arredondada Externo 60x60cm (Caixa com 1,80m² por R$152,12)",
             "preco_por_caixa": 152.12,
-            "area_por_caixa": 1.8,
+            "area_por_caixa": 1.80,
             "imagem": "https://cdagua.vtexassets.com/arquivos/ids/203687-800-800?v=638612236070930000&width=800&height=800&aspect=true",
             "descricao": "Ideal para: áreas de piscina, garagens externas, calçadas e passarelas."
         },
         {
-            "nome": "Porcelanato Marmorizado Acetinado Borda Reta Interno 91x91cm",
+            "nome": "Porcelanato Marmorizado Acetinado Borda Reta Interno 91x91cm (Caixa com 2,48m² por R$151,30)",
             "preco_por_caixa": 151.30,
             "area_por_caixa": 2.48,
             "imagem": "https://cdn.leroymerlin.com.br/products/porcelanato_acetinado_interno_91x91cm_blush_artens_92271886_6991_600x600.jpg",
             "descricao": "Ideal para: sala de estar/jantar, cozinhas e banheiros internos, escritórios e ambientes comerciais, corredores e Halls."
         },
         {
-            "nome": "Porcelanato Marmorizado Polido Borda Reta Interno 120x120cm",
+            "nome": "Porcelanato Marmorizado Polido Borda Reta Interno 120x120cm (Caixa com 2,48m² por R$541,18)",
             "preco_por_caixa": 541.18,
             "area_por_caixa": 2.48,
             "imagem": "https://acheiseupiso.com/cdn/shop/files/porcelanato_interno_polido_borda_reta_120x120cm_chloe_lux_90820170_b5ae_600x600_c41cdb0c-4520-49ff-8aad-13dd680c9493.jpg?v=1730828719",
             "descricao": "Ideal para: sala de estar/jantar, hall de entrada, cozinhas e banheiros, áreas comerciais de luxo."
         },
         {
-            "nome": "Porcelanato Decorado Acetinado Borda Reta Externo 72x72cm",
+            "nome": "Porcelanato Decorado Acetinado Borda Reta Externo 72x72cm (Caixa com 2,59m² por R$121,50)",
             "preco_por_caixa": 121.50,
             "area_por_caixa": 2.59,
             "imagem": "https://d365e82sgxmduv.cloudfront.net/Custom/Content/Products/23/32/2332883_29549-porcelanato-cairo-externo-rust-72x72-cx2-59m-72111281-savane_z5_638300284526519484.webp",
@@ -56,14 +63,14 @@ pisos = {
     ],
     "Cerâmico": [
         {
-            "nome": "Piso Cerâmico Retificado 66x66 cm",
+            "nome": "Piso Cerâmico Retificado 66x66 cm(Caixa com 2,18m² por R$89,90)",
             "preco_por_caixa": 89.90,
             "area_por_caixa": 2.18,
             "imagem": "https://telhanorte.vtexassets.com/arquivos/ids/1245914/7899436339296.jpg?v=638119047284200000",
             "descricao": "Ideal para: cozinhas, banheiro, áreas externas cobertas, sala de estar/jantar, corredores e Halls."
         },
         {
-            "nome": "Piso Cerâmico Pedra Acetinado Borda Arredondada Externo 61,5x61,5cm",
+            "nome": "Piso Cerâmico Pedra Acetinado Borda Arredondada Externo 61,5x61,5cm (Caixa com 2,65m² por R$58.03)",
             "preco_por_caixa": 58.03,
             "area_por_caixa": 2.65,
             "imagem": "https://dcdn.mitiendanube.com/stores/002/797/263/products/piso-sao-tome-61x61-p1-a12fa27bc8dd7bbf5416763131496560-640-0.webp",
@@ -72,8 +79,8 @@ pisos = {
     ],
     "Vinílico": [
         {
-            "nome": "Piso Vinílico Vinil Forte Jacarandá 2x19x123cm",
-            "preco_por_caixa": 99.90,
+            "nome": "Piso Vinílico Vinil Forte Jacarandá 2x19x123cm (Caixa com 4,72m² por R$120,24)",
+            "preco_por_caixa": 120.90,
             "area_por_caixa": 4.72,
             "imagem": "https://cdn.dooca.store/116921/products/jacaranda-hd-19x123-modelo-1_1600x1600+fill_ffffff.jpg?v=1692322213",
             "descricao": "Ideal para: áreas com baixa umidade como quartos, sala de estar/jantar, corredores e Halls."
@@ -81,7 +88,7 @@ pisos = {
     ],
     "Retificado": [
         {
-          "nome": "Piso Mont Blanc Satiny Retificado 101x101cm",
+          "nome": "Piso Mont Blanc Satiny Retificado 101x101cm (Caixa com 2,04m² por R$134,44)",
           "preco_por_caixa": 134.44,
           "area_por_caixa": 2.04,
           "imagem": "https://telhanorte.vtexassets.com/arquivos/ids/1272049-1200-auto",
@@ -90,7 +97,7 @@ pisos = {
     ],
     "Granito": [
         {
-          "nome": "Piso Interno Granito Casablanca Branco 57x57cm Extrata Stones",
+          "nome": "Piso Interno Granito Casablanca Branco 57x57cm Extrata Stones (Caixa com 0,975m² por R$394,71)",
           "preco_por_caixa": 394.71,
           "area_por_caixa": 0.975,
           "imagem": "https://cdn.leroymerlin.com.br/products/piso_ext_granito_casablanca_branco_57x57_m2_extratatones_91789663_91df_600x600.png",
