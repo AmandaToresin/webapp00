@@ -84,3 +84,14 @@ if st.button("Calcular Orçamento para Porcelanato Marmorizado", key='btn_marmor
     orcamento7, caixas_necessarias7 = calcular_orcamento(area7, 151.30, adicionar_sobra7, 2.48)
     st.success(f"O orçamento total para o Porcelanato Marmorizado é: R$ {orcamento7:.2f}")
     st.info(f"Você precisará de aproximadamente {caixas_necessarias7:.0f} caixas de Porcelanato Marmorizado.")
+
+# Oitavo Piso - Porcelanato Marmorizado Polido
+st.subheader("Porcelanato Marmorizado Polido Borda Reta Interno 120x120cm (R$ 541,18 por caixa de 2,88m²)")
+st.image("https://acheiseupiso.com/cdn/shop/files/porcelanato_interno_polido_borda_reta_120x120cm_chloe_lux_90820170_b5ae_600x600_c41cdb0c-4520-49ff-8aad-13dd680c9493.jpg?v=1730828719", caption="Ideal para: sala de estar/jantar, hall de entrada, cozinhas e banheiros, áreas comerciais de luxo.", use_column_width=True)
+area8 = st.number_input("Digite a área do Porcelanato Marmorizado Polido em m²:", min_value=0.0, format="%.2f", key='area8')
+adicionar_sobra8 = st.checkbox("Deseja adicionar 20% de sobra ao Porcelanato Marmorizado Polido?", key='marmorizado_polido')
+if st.button("Calcular Orçamento para Porcelanato Marmorizado Polido", key='btn_marmorizado_polido'):
+    orcamento8, caixas_necessarias8 = calcular_orcamento(area8, 541.18, adicionar_sobra8, 2.88)
+    st.success(f"O orçamento total para o Porcelanato Marmorizado Polido é: R$ {orcamento8:.2f}")
+    st.info(f"Você precisará de aproximadamente {caixas_necessarias8:.0f} caixas de Porcelanato Marmorizado Polido.")
+
