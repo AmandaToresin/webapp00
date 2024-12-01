@@ -15,63 +15,67 @@ def calcular_orcamento(area, preco_por_caixa, adicionar_sobra, area_por_caixa):
 
 # Definindo os tipos de piso e suas características
 pisos = {
-    "Piso Laminado": {
-        "nome": "Piso Laminado Eucafloor Prime Click Carvalho Canela Cx 2,36m²",
-        "preco_por_caixa": 119.90,
-        "area_por_caixa": 2.36,
-        "imagem": "https://static.estilohomecenter.com.br/public/estilohomecenter/imagens/produtos/piso-laminado-eucafloor-carvalho-canela-prime-click-cx-2-36m2-6651f11b0ba71.jpg",
-        "descricao": "Ideal para: sala de estar/jantar, quartos, corredores."
-    },
-    "Piso Cerâmico": {
-        "nome": "Piso Cerâmico Retificado 66x66 cm",
-        "preco_por_caixa": 89.90,
-        "area_por_caixa": 2.18,
-        "imagem": "https://telhanorte.vtexassets.com/arquivos/ids/1245914/7899436339296.jpg?v=638119047284200000",
-        "descricao": "Ideal para: cozinhas, banheiro, áreas externas cobertas, sala de estar/jantar, corredores e Halls."
-    },
-
-    "Piso Vinílico": {
-        "nome": "Piso Vinílico Vinil Forte Jacarandá 2x19x123cm",
-        "preco_por_caixa": 99.90,
-        "area_por_caixa": 4.72,
-        "imagem": "https://cdn.dooca.store/116921/products/jacaranda-hd-19x123-modelo-1_1600x1600+fill_ffffff.jpg?v=1692322213",
-        "descricao": "Ideal para: áreas com baixa umidade como quartos, sala de estar/jantar, corredores e Halls."
-    },
-    "Piso Retificado": {
-        "nome": "Piso Mont Blanc Satiny Retificado 101x101 cm",
-        "preco_por_caixa": 134.44,
-        "area_por_caixa": 2.04,
-        "imagem": "https://telhanorte.vtexassets.com/arquivos/ids/1272049-1200-auto",
-        "descricao": "Ideal para: cozinhas, banheiros, áreas externas cobertas, hall de entrada e corredores."
-    },
-    "Piso Porcelanato": {
-        "nome": "Porcelanato Cimentício Acetinado Borda Arredondada Externo 60x60cm",
-        "preco_por_caixa": 152.12,
-        "area_por_caixa": 1.8,
-        "imagem": "https://cdagua.vtexassets.com/arquivos/ids/203687-800-800?v=638612236070930000&width=800&height=800&aspect=true",
-        "descricao": "Ideal para: áreas de piscina, garagens externas, calçadas e passarelas."
-    },
-    "Porcelanato Marmorizado": {
-        "nome": "Porcelanato Marmorizado Acetinado Borda Reta Interno 91x91cm",
-        "preco_por_caixa": 151.30,
-        "area_por_caixa": 2.48,
-        "imagem": "https://cdn.leroymerlin.com.br/products/porcelanato_acetinado_interno_91x91cm_blush_artens_92271886_6991_600x600.jpg",
-        "descricao": "Ideal para: sala de estar/jantar, cozinhas e banheiros internos, escritórios e ambientes comerciais, corredores e Halls."
-    }
+    "Porcelanato": [
+        {
+            "nome": "Porcelanato Cimentício Acetinado Borda Arredondada Externo 60x60cm",
+            "preco_por_caixa": 152.12,
+            "area_por_caixa": 1.8,
+            "imagem": "https://cdagua.vtexassets.com/arquivos/ids/203687-800-800?v=638612236070930000&width=800&height=800&aspect=true",
+            "descricao": "Ideal para: áreas de piscina, garagens externas, calçadas e passarelas."
+        },
+        {
+            "nome": "Porcelanato Marmorizado Acetinado Borda Reta Interno 91x91cm",
+            "preco_por_caixa": 151.30,
+            "area_por_caixa": 2.48,
+            "imagem": "https://cdn.leroymerlin.com.br/products/porcelanato_acetinado_interno_91x91cm_blush_artens_92271886_6991_600x600.jpg",
+            "descricao": "Ideal para: sala de estar/jantar, cozinhas e banheiros internos, escritórios e ambientes comerciais, corredores e Halls."
+        }
+    ],
+    "Cerâmico": [
+        {
+            "nome": "Piso Cerâmico Retificado 66x66 cm",
+            "preco_por_caixa": 89.90,
+            "area_por_caixa": 2.18,
+            "imagem": "https://telhanorte.vtexassets.com/arquivos/ids/1245914/7899436339296.jpg?v=638119047284200000",
+            "descricao": "Ideal para: cozinhas, banheiro, áreas externas cobertas, sala de estar/jantar, corredores e Halls."
+        },
+        {
+            "nome": "Piso Cerâmico Pedra Acetinado Borda Arredondada Externo 61,5x61,5cm",
+            "preco_por_caixa": 58.03,
+            "area_por_caixa": 2.65,
+            "imagem": "https://dcdn.mitiendanube.com/stores/002/797/263/products/piso-sao-tome-61x61-p1-a12fa27bc8dd7bbf5416763131496560-640-0.webp",
+            "descricao": "Ideal para: indicado para área externas como varandas, garagens, calçadas, áreas de lazer e jardins."
+        }
+    ],
+    "Vinílico": [
+        {
+            "nome": "Piso Vinílico Vinil Forte Jacarandá 2x19x123cm",
+            "preco_por_caixa": 99.90,
+            "area_por_caixa": 4.72,
+            "imagem": "https://cdn.dooca.store/116921/products/jacaranda-hd-19x123-modelo-1_1600x1600+fill_ffffff.jpg?v=1692322213",
+            "descricao": "Ideal para: áreas com baixa umidade como quartos, sala de estar/jantar, corredores e Halls."
+        }
+    ]
 }
 
-# Adicionando o filtro para selecionar o tipo de piso
-tipo_piso = st.selectbox("Selecione o tipo de piso", list(pisos.keys()))
+# Adicionando o filtro para selecionar a categoria de piso
+categoria_piso = st.selectbox("Selecione a categoria de piso", ["Porcelanato", "Cerâmico", "Vinílico"])
+
+# Adicionando o filtro para selecionar o tipo de piso dentro da categoria selecionada
+tipo_piso = st.selectbox(f"Selecione o tipo de piso {categoria_piso}", [piso["nome"] for piso in pisos[categoria_piso]])
+
+# Encontrando o piso selecionado
+piso_selecionado = next(piso for piso in pisos[categoria_piso] if piso["nome"] == tipo_piso)
 
 # Exibindo informações do piso selecionado
-st.subheader(pisos[tipo_piso]["nome"])
-st.image(pisos[tipo_piso]["imagem"], caption=pisos[tipo_piso]["descricao"], use_column_width=True)
-area = st.number_input(f"Digite a área do {tipo_piso} em m²:", min_value=0.0, format="%.2f", key='area')
-adicionar_sobra = st.checkbox(f"Deseja adicionar 20% de sobra ao {tipo_piso}?", key='sobra')
-if st.button(f"Calcular Orçamento para {tipo_piso}", key='btn'):
-    orcamento, caixas_necessarias = calcular_orcamento(area, pisos[tipo_piso]["preco_por_caixa"], adicionar_sobra, pisos[tipo_piso]["area_por_caixa"])
-    st.success(f"O orçamento total para o {tipo_piso} é: R$ {orcamento:.2f}")
-    st.info(f"Você precisará de aproximadamente {caixas_necessarias:.0f} caixas de {tipo_piso}.")
+st.subheader(piso_selecionado["nome"])
+st.image(piso_selecionado["imagem"], caption=piso_selecionado["descricao"], use_column_width=True)
+area = st.number_input(f"Digite a área do {categoria_piso} em m²:", min_value=0.0, format="%.2f", key='area')
+adicionar_sobra = st.checkbox(f"Deseja adicionar 20% de sobra ao {categoria_piso}?", key='sobra')
+if st.button(f"Calcular Orçamento para {categoria_piso}", key='btn'):
+    orcamento, caixas_necessarias = calcular_orcamento(area, piso_selecionado["preco_por_caixa"], adicionar_sobra, piso_selecionado["area_por_caixa"])
+    st.success(f"O orçamento total para o {categoria_piso} é: R$ {orcamento:.2f}")
+    st.info(f"Você precisará de aproximadamente {caixas_necessarias:.0f} caixas de {categoria_piso}.")
 
 
 # Primeiro Piso - Piso Laminado
