@@ -10,7 +10,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url("https://i.pinimg.com/474x/9f/1f/96/9f1f965f457ef9e58584a6910a13b453.jpg");
+        background-image: url("https://st.depositphotos.com/1757583/3190/i/450/depositphotos_31906219-stock-photo-grey-background.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
