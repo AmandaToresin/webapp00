@@ -62,7 +62,7 @@ pisos = {
 categoria_piso = st.selectbox("Selecione a categoria de piso", ["Porcelanato", "Cerâmico", "Vinílico"])
 
 # Encontrando o piso selecionado
-piso_selecionado = next(piso for piso in pisos[categoria_piso] if piso["nome"] == tipo_piso)
+piso_selecionado = next(piso for piso in pisos[categoria_piso] if piso["nome"])
 
 # Exibindo informações do piso selecionado
 st.subheader(piso_selecionado["nome"])
