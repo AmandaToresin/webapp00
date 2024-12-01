@@ -1,9 +1,6 @@
 import streamlit as st
 
 # Título e cabeçalhos
-st.title("UniPisos")import streamlit as st
-
-# Título e cabeçalhos
 st.title("UniPisos")
 st.header("Descomplicando os Dados de Memorial de Cálculo na Construção")
 st.subheader("O que é Memorial de Cálculo?")
@@ -84,4 +81,4 @@ area6 = st.number_input("Digite a área do piso Porcelanato em m²:", min_value=
 adicionar_sobra6 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Porcelanato?", key='porcelanato')
 if st.button("Calcular Orçamento para Piso Porcelanato"):
     orcamento6, caixas_necessarias6 = calcular_orcamento(area6, 152.12, adicionar_sobra6, 1.8)
-    st.success(f"O orçamento total para o Piso Por
+    st.success(f"O orçamento total para o Piso
