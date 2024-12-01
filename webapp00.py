@@ -156,8 +156,8 @@ def exibir_informacoes_piso(piso, categoria, idx):
     adicionar_sobra = st.checkbox(f"Deseja adicionar 20% de sobra ao {piso['nome']}?", key=f'sobra_{contador}')
     if st.button(f"Calcular Orçamento para {piso['nome']}", key=f'btn_{contador}'):
         orcamento, caixas_necessarias = calcular_orcamento(area, piso["preco_por_caixa"], adicionar_sobra, piso["area_por_caixa"])
-        st.success(f"O orçamento total para o {piso['nome']} é: R$ {orcamento:.2f}")
-        st.info(f"Você precisará de aproximadamente {caixas_necessarias:.0f} caixas de {piso['nome']}.")
+        st.success(f"O orçamento total é: R$ {orcamento:.2f}")
+        st.info(f"Você precisará de aproximadamente caixas.")
 
 # Criando as abas para cada tipo de piso
 abas = st.tabs(["Todos", "Laminado", "Cerâmico", "Vinílico", "Porcelanato"])
