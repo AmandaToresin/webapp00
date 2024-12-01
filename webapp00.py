@@ -10,7 +10,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url("https://img.freepik.com/fotos-premium/cores-de-gradiente-de-protecao-de-tela-de-fundo-de-azul-verde-a-turquesa-para-sites-de-aplicativos-e-banners_234715-675.jpg");
+        background-image: url("https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=600");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
