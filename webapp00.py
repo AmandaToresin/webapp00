@@ -10,39 +10,24 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url("https://img.freepik.com/fotos-gratis/fundo-colorido-desfocado-vivido_58702-2655.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        color: black; /* Define a cor do texto como preto */
+        background-color: white; /* Fundo branco */
+        color: black; /* Texto preto */
     }
-    
-    /* Garantir que todos os textos fiquem na cor preta */
-    .stApp * {
-        color: black !important;
-    }
-
-    /* Estilizando as caixas de entrada para manter o fundo branco e texto preto */
-    input {
+    .stTextInput input {
         background-color: white !important;
         color: black !important;
     }
-
-    /* Estilizando os elementos de texto nas caixas de entrada */
-    .css-1dp5vir {
-        color: black !important;
-    }
-
-    /* Estilizando os botões */
-    button {
+    .stButton button {
         background-color: #4CAF50; /* Verde */
-        color: white !important; /* Texto branco */
+        color: white !important;
+    }
+    .stSelectbox, .stRadio, .stCheckbox, .stTextArea, .stNumberInput {
+        color: black !important;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
-
 
 def calcular_orcamento(area, preco_por_caixa, adicionar_sobra, area_por_caixa):
     if adicionar_sobra:
