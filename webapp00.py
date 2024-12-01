@@ -44,22 +44,33 @@ if st.button("Calcular Orçamento para Piso Cerâmico"):
     st.success(f"O orçamento total para o Piso Cerâmico é: R$ {orcamento2:.2f}")
     st.info(f"Você precisará de aproximadamente {caixas_necessarias2:.0f} caixas de Piso Cerâmico.")
 
-# Terceiro Piso - Piso Vinílico
+#Terceiro Piso - Ceramico 2  
+st.subheader("Piso Cerâmico Pedra Acetinado Borda Arredondada Externo 61,5x61,5cm (RS 58,03 por caixa de 2,65m2)")
+st.imagem("https://dcdn.mitiendanube.com/stores/002/797/263/products/piso-sao-tome-61x61-p1-a12fa27bc8dd7bbf5416763131496560-640-0.webp", caption="Ideal para: indicado para área externas como varandas, garagens, calçadas, áreas de lazer e jardins.", use_column_width=True)
+area3 = st.number_input("Digite a área do piso Cerâmico em m²:", min_value=0.0, format=".2f")
+adicionar_sobra3 = st.chackbox("Deseja adicionar 20% de sobra ao Piso Cerâmico?", key='ceramico_pedra')
+if st.button("Calcular Orçamento para Piso Cerâmico"):
+    orcamento3, caixas_necessarias3 = calcular_orcamento(area3, 58.03, adicionar_sobra3, 2.65)
+    st.success(f"O orçamento total para o Piso Cerâmico é: R$ {orcamento3:.2f}")
+    st.info(f"Você precisará de aproximadamente {caixas_necessarias3:.0f} caixas de Piso Cerâmico.")
+
+# Quarto Piso - Piso Vinílico 
 st.subheader("Piso Vinílico Vinil Forte Jacarandá 2x19x123cm (R$ 99,90 por caixa de 4,72m²)")
 st.image("https://cdn.dooca.store/116921/products/jacaranda-hd-19x123-modelo-1_1600x1600+fill_ffffff.jpg?v=1692322213", caption="Ideal para: áreas com baixa umidade como quartos, sala de estar/jantar, corredores e Halls.", use_column_width=True)
-area3 = st.number_input("Digite a área do piso Vinílico em m²:", min_value=0.0, format="%.2f")
-adicionar_sobra3 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Vinílico?", key='vinilico')
+area4 = st.number_input("Digite a área do piso Vinílico em m²:", min_value=0.0, format="%.2f")
+adicionar_sobra4 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Vinílico?", key='vinilico')
 if st.button("Calcular Orçamento para Piso Vinílico"):
-    orcamento3, caixas_necessarias3 = calcular_orcamento(area3, 99.90, adicionar_sobra3, 4.72)
-    st.success(f"O orçamento total para o Piso Vinílico é: R$ {orcamento3:.2f}")
-    st.info(f"Você precisará de aproximadamente {caixas_necessarias3:.0f} caixas de Piso Vinílico.")
+    orcamento4, caixas_necessarias4 = calcular_orcamento(area4, 99.90, adicionar_sobra4, 4.72)
+    st.success(f"O orçamento total para o Piso Vinílico é: R$ {orcamento4:.2f}")
+    st.info(f"Você precisará de aproximadamente {caixas_necessarias4:.0f} caixas de Piso Vinílico.")
 
-# Quarto Piso - Piso Retificado
+# Quinto Piso - Piso Retificado
 st.subheader("Piso Mont Blanc Satiny Retificado 101x101 cm (RS 134,44 por caixa de 2,04 m2)")
 st.image("https://telhanorte.vtexassets.com/arquivos/ids/1272049-1200-auto", caption="Ideal para: cozinhas, banheiros, áreas externas cobertas, hall de entrada e corredores.", use_column_width=True)
-area4 = st.number_input("Digite a área do piso Retificado em m²:", min_value=0.0, format="%.2f")
-adicionar_sobra4 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Retificado?", key='retificado')
+area5 = st.number_input("Digite a área do piso Retificado em m²:", min_value=0.0, format="%.2f")
+adicionar_sobra5 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Retificado?", key='retificado')
 if st.button("Calcular Orçamento para Piso Retificado"):
-    orcamento4, caixas_necessarias4 = calcular_orcamento(area4, 134.44, adicionar_sobra4, 2.04)
-    st.success(f"O orçamento total para o Piso Retificado é: R$ {orcamento4:.2f}")
-    st.info(f"Você precisará de aproximadamente {caixas_necessarias4:.0f} caixas de Piso Retificado.")
+    orcamento5, caixas_necessarias5 = calcular_orcamento(area5, 134.44, adicionar_sobra5, 2.04)
+    st.success(f"O orçamento total para o Piso Retificado é: R$ {orcamento5:.2f}")
+    st.info(f"Você precisará de aproximadamente {caixas_necessarias5:.0f} caixas de Piso Retificado.")
+ 
