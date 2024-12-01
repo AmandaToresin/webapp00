@@ -80,7 +80,7 @@ pisos = {
         },
         {
             "nome": "Piso Vinílico Cola Injoy Papoula Madeira Bege(Caixa com 4,09m² por R$347,24)",
-            "preco_por_caixa": 347,24,
+            "preco_por_caixa": 347.24,
             "area_por_caixa": 4.09,
             "imagem": "https://cdn.leroymerlin.com.br/products/piso_pvc_vini_injoy_papola_20,8x2x1,23_m2_tarkett_91068600_8007_600x600.jpg",
             "descricao": "Ideal para: sala de estar/jantar, quartos, corredores."
