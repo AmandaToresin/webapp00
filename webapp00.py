@@ -102,13 +102,13 @@ pisos = {
 abas = st.tabs(["Todos", "Laminado", "Cerâmico", "Vinílico", "Porcelanato", "Granito"])
 
 # Função para exibir informações do piso
-def exibir_informacoes_piso(pisos):
-    for piso in pisos:
+def exibir_informacoes_piso(categoria_pisos, categoria):
+    for idx, piso in enumerate(categoria_pisos[categoria]):
         st.subheader(piso["nome"])
         st.image(piso["imagem"], caption=piso["descricao"], use_column_width=True)
-        area = st.number_input(f"Digite a área do {piso['nome']} em m²:", min_value=0.0, format="%.2f", key=f'area_{piso["nome"]}')
-        adicionar_sobra = st.checkbox(f"Deseja adicionar 20% de sobra ao {piso['nome']}?", key=f'sobra_{piso["nome"]}')
-        if st.button(f"Calcular Orçamento para {piso['nome']}", key=f'btn_{piso["nome"]}'):
+        area = st.number_input(f"Digite a área do {piso['nome']} em m²:", min_value=0.0, format="%.2f", key=f'area_{categoria}_{idx}')
+        adicionar_sobra = st.checkbox(f"Deseja adicionar 20% de sobra ao {piso['nome']}?", key=f'sobra_{categoria}_{idx}')
+        if st.button(f"Calcular Orçamento para {piso['nome']}", key=f'btn_{categoria}_{idx}'):
             orcamento, caixas_necessarias = calcular_orcamento(area, piso["preco_por_caixa"], adicionar_sobra, piso["area_por_caixa"])
             st.success(f"O orçamento total para o {piso['nome']} é: R$ {orcamento:.2f}")
             st.info(f"Você precisará de aproximadamente {caixas_necessarias:.0f} caixas de {piso['nome']}.")
@@ -116,27 +116,28 @@ def exibir_informacoes_piso(pisos):
 # Adicionando conteúdo a cada aba
 with abas[0]:
     st.header("Todos")
-    for categoria in pisos.values():
-        exibir_informacoes_piso(categoria)
+    for categoria in pisos.keys():
+        exibir_informacoes_piso(pisos, categoria)
 
 with abas[1]:
-    st.header("Cerâmico")
-    exibir_informacoes_piso(pisos["Cerâmico"])
+    st.header("Laminado")
+    exibir_informacoes_piso(pisos, "Laminado")
 
 with abas[2]:
-    st.header("Vinílico")
-    exibir_informacoes_piso(pisos["Vinílico"])
+    st.header("Cerâmico")
+    exibir_informacoes_piso(pisos, "Cerâmico")
 
 with abas[3]:
-    st.header("Porcelanato")
-    exibir_informacoes_piso(pisos["Porcelanato"])
+    st.header("Vinílico")
+    exibir_informacoes_piso(pisos, "Vinílico")
 
 with abas[4]:
+    st.header("Porcelanato")
+    exibir_informacoes_piso(pisos, "Porcelanato")
+
+with abas[5]:
     st.header("Granito")
-    exibir_informacoes_piso(pisos["Granito"])
-with abas[6]:
-    st.header("Laminado")
-    exibir_informacoes_piso(pisos["Laminado"])
+    exibir_informacoes_piso(pisos, "Granito")
 
 
 # Exibindo os pisos com base na categoria selecionada
