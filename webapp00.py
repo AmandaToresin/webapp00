@@ -2,7 +2,7 @@ import streamlit as st
 
 # Título e cabeçalhos
 st.title("MABIL")
-st.image("https://pbs.twimg.com/media/GdveWw2XUAAO1Bf?format=png&name=small", width=200)
+st.image("https://pbs.twimg.com/media/GdveWw2XUAAO1Bf?format=png&name=small")
 st.header("🔷 Calculadora de Pisos")
 st.write("Bem-vindo ao nosso calculador de orçamento de piso! Aqui, você pode calcular de forma rápida e fácil quanto vai gastar para revestir sua área com pisos de sua escolha. Informe a metragem quadrada do ambiente, selecione o tipo de piso e obtenha uma estimativa precisa do custo total. Nosso objetivo é tornar o processo de planejamento da reforma mais simples e transparente, ajudando você a tomar decisões informadas e adequadas ao seu orçamento. Comece agora e descubra quanto seu projeto vai custar!")
 
