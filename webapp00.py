@@ -22,13 +22,6 @@ pisos = {
             "area_por_caixa": 2.36,
             "imagem": "https://static.estilohomecenter.com.br/public/estilohomecenter/imagens/produtos/piso-laminado-eucafloor-carvalho-canela-prime-click-cx-2-36m2-6651f11b0ba71.jpg",
             "descricao": "Ideal para: sala de estar/jantar, quartos, corredores."
-        },
-        {
-            "nome": "Piso Laminado Eucafloor Prime Click Carvalho Canela(Caixa com 4,09m² por R$347,24)",
-            "preco_por_caixa": 347,24,
-            "area_por_caixa": 4.09m,
-            "imagem": "https://cdn.leroymerlin.com.br/products/piso_pvc_vini_injoy_papola_20,8x2x1,23_m2_tarkett_91068600_8007_600x600.jpg",
-            "descricao": "Ideal para: sala de estar/jantar, quartos, corredores."
         }
     ],
     "Porcelanato": [
@@ -84,6 +77,13 @@ pisos = {
             "area_por_caixa": 4.72,
             "imagem": "https://cdn.dooca.store/116921/products/jacaranda-hd-19x123-modelo-1_1600x1600+fill_ffffff.jpg?v=1692322213",
             "descricao": "Ideal para: áreas com baixa umidade como quartos, sala de estar/jantar, corredores e Halls."
+        },
+        {
+            "nome": "Piso Vinílico Cola Injoy Papoula Madeira Bege(Caixa com 4,09m² por R$347,24)",
+            "preco_por_caixa": 347,24,
+            "area_por_caixa": 4.09m,
+            "imagem": "https://cdn.leroymerlin.com.br/products/piso_pvc_vini_injoy_papola_20,8x2x1,23_m2_tarkett_91068600_8007_600x600.jpg",
+            "descricao": "Ideal para: sala de estar/jantar, quartos, corredores."
         }
     ],
     "Retificado": [
