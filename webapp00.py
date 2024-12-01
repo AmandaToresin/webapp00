@@ -10,7 +10,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url("https://static.vecteezy.com/ti/vetor-gratis/p1/7276935-padrao-icones-construcao-padrao-doodle-sem-costura-com-ferramentas-para-construcao-ilustracao-sobre-o-tema-da-construcao-vetor.jpg");
+        background-image: url("https://img.freepik.com/fotos-premium/cores-de-gradiente-de-protecao-de-tela-de-fundo-de-azul-verde-a-turquesa-para-sites-de-aplicativos-e-banners_234715-675.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
