@@ -12,7 +12,6 @@ def calcular_orcamento(area, preco_por_caixa, adicionar_sobra, area_por_caixa):
     orcamento_total = caixas_necessarias * preco_por_caixa
     return orcamento_total, caixas_necessarias
 
-
 # Definindo os tipos de piso e suas características
 pisos = {
     "Porcelanato": [
@@ -59,18 +58,28 @@ pisos = {
 }
 
 # Adicionando o filtro para selecionar a categoria de piso
-categoria_piso = st.selectbox("Selecione a categoria de piso", ["Porcelanato", "Cerâmico", "Vinílico"])
+categoria_piso = st.selectbox("Selecione a categoria de piso", ["Todos", "Porcelanato", "Cerâmico", "Vinílico"])
 
-# Iterando pelos pisos da categoria selecionada e exibindo as informações relevantes
-for piso in pisos[categoria_piso]:
-    st.subheader(piso["nome"])
-    st.image(piso["imagem"], caption=piso["descricao"], use_column_width=True)
-    area = st.number_input(f"Digite a área do {piso['nome']} em m²:", min_value=0.0, format="%.2f", key=f'area_{piso["nome"]}')
-    adicionar_sobra = st.checkbox(f"Deseja adicionar 20% de sobra ao {piso['nome']}?", key=f'sobra_{piso["nome"]}')
-    if st.button(f"Calcular Orçamento para {piso['nome']}", key=f'btn_{piso["nome"]}'):
-        orcamento, caixas_necessarias = calcular_orcamento(area, piso["preco_por_caixa"], adicionar_sobra, piso["area_por_caixa"])
-        st.success(f"O orçamento total para o {piso['nome']} é: R$ {orcamento:.2f}")
-        st.info(f"Você precisará de aproximadamente {caixas_necessarias:.0f} caixas de {piso['nome']}.")
+# Função para exibir os pisos com base na categoria selecionada
+def exibir_pisos(categoria):
+    if categoria == "Todos":
+        categorias = pisos.keys()
+    else:
+        categorias = [categoria]
+        
+    for cat in categorias:
+        for piso in pisos[cat]:
+            st.subheader(piso["nome"])
+            st.image(piso["imagem"], caption=piso["descricao"], use_column_width=True)
+            area = st.number_input(f"Digite a área do {piso['nome']} em m²:", min_value=0.0, format="%.2f", key=f'area_{piso["nome"]}')
+            adicionar_sobra = st.checkbox(f"Deseja adicionar 20% de sobra ao {piso['nome']}?", key=f'sobra_{piso["nome"]}')
+            if st.button(f"Calcular Orçamento para {piso['nome']}", key=f'btn_{piso["nome"]}'):
+                orcamento, caixas_necessarias = calcular_orcamento(area, piso["preco_por_caixa"], adicionar_sobra, piso["area_por_caixa"])
+                st.success(f"O orçamento total para o {piso['nome']} é: R$ {orcamento:.2f}")
+                st.info(f"Você precisará de aproximadamente {caixas_necessarias:.0f} caixas de {piso['nome']}.")
+
+# Exibindo os pisos com base na categoria selecionada
+exibir_pisos(categoria_piso)
 
 
 # Primeiro Piso - Piso Laminado
