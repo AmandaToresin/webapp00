@@ -10,7 +10,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url("https://www.papeiseparede.com.br/5026-thickbox_default/papel-de-parede-tijolinhos-em-gesso-3d.jpg.webp");
+        background-image: url("https://img.freepik.com/fotos-gratis/textura-da-parede-de-gesso_1154-716.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
