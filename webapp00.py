@@ -61,18 +61,16 @@ pisos = {
 # Adicionando o filtro para selecionar a categoria de piso
 categoria_piso = st.selectbox("Selecione a categoria de piso", ["Porcelanato", "Cerâmico", "Vinílico"])
 
-# Encontrando o piso selecionado
-piso_selecionado = next(piso for piso in pisos[categoria_piso] if piso["nome"])
-
-# Exibindo informações do piso selecionado
-st.subheader(piso_selecionado["nome"])
-st.image(piso_selecionado["imagem"], caption=piso_selecionado["descricao"], use_column_width=True)
-area = st.number_input(f"Digite a área do {categoria_piso} em m²:", min_value=0.0, format="%.2f", key='area')
-adicionar_sobra = st.checkbox(f"Deseja adicionar 20% de sobra ao {categoria_piso}?", key='sobra')
-if st.button(f"Calcular Orçamento para {categoria_piso}", key='btn'):
-    orcamento, caixas_necessarias = calcular_orcamento(area, piso_selecionado["preco_por_caixa"], adicionar_sobra, piso_selecionado["area_por_caixa"])
-    st.success(f"O orçamento total para o {categoria_piso} é: R$ {orcamento:.2f}")
-    st.info(f"Você precisará de aproximadamente {caixas_necessarias:.0f} caixas de {categoria_piso}.")
+# Iterando pelos pisos da categoria selecionada e exibindo as informações relevantes
+for piso in pisos[categoria_piso]:
+    st.subheader(piso["nome"])
+    st.image(piso["imagem"], caption=piso["descricao"], use_column_width=True)
+    area = st.number_input(f"Digite a área do {piso['nome']} em m²:", min_value=0.0, format="%.2f", key=f'area_{piso["nome"]}')
+    adicionar_sobra = st.checkbox(f"Deseja adicionar 20% de sobra ao {piso['nome']}?", key=f'sobra_{piso["nome"]}')
+    if st.button(f"Calcular Orçamento para {piso['nome']}", key=f'btn_{piso["nome"]}'):
+        orcamento, caixas_necessarias = calcular_orcamento(area, piso["preco_por_caixa"], adicionar_sobra, piso["area_por_caixa"])
+        st.success(f"O orçamento total para o {piso['nome']} é: R$ {orcamento:.2f}")
+        st.info(f"Você precisará de aproximadamente {caixas_necessarias:.0f} caixas de {piso['nome']}.")
 
 
 # Primeiro Piso - Piso Laminado
