@@ -1,10 +1,30 @@
 import streamlit as st
 
-# Exibindo a imagem centralizada e retangular
-st.markdown('<img src="https://pbs.twimg.com/media/GdveWw2XUAAO1Bf?format=png&name=small" class="center">', unsafe_allow_html=True)
+# Centralizando a imagem
+st.markdown(
+    """
+    <style>
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;  /* Ajuste a largura conforme necessário */
+    }
+    </style>
+    <img src="https://pbs.twimg.com/media/GdveWw2XUAAO1Bf?format=png&name=small" class="center">
+    """,
+    unsafe_allow_html=True
+)
 
 st.header("🔷 Calculadora de Pisos")
-st.write("Bem-vindo ao nosso calculador de orçamento de piso! Aqui, você pode calcular de forma rápida e fácil quanto vai gastar para revestir sua área com pisos de sua escolha. Informe a metragem quadrada do ambiente, selecione o tipo de piso e obtenha uma estimativa precisa do custo total. Nosso objetivo é tornar o processo de planejamento da reforma mais simples e transparente, ajudando você a tomar decisões informadas e adequadas ao seu orçamento. Comece agora e descubra quanto seu projeto vai custar!")
+st.write(
+    """
+    Bem-vindo ao nosso calculador de orçamento de piso! Aqui, você pode calcular de forma rápida e fácil quanto vai gastar para revestir sua área com pisos de sua escolha. 
+    Informe a metragem quadrada do ambiente, selecione o tipo de piso e obtenha uma estimativa precisa do custo total. 
+    Nosso objetivo é tornar o processo de planejamento da reforma mais simples e transparente, ajudando você a tomar decisões informadas e adequadas ao seu orçamento. 
+    Comece agora e descubra quanto seu projeto vai custar!
+    """
+)
 
 
 def calcular_orcamento(area, preco_por_caixa, adicionar_sobra, area_por_caixa):
