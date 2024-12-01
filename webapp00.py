@@ -90,10 +90,10 @@ pisos = {
 }
 
 # Adicionando o filtro para selecionar a categoria de piso
-categoria_piso = st.selectbox("Selecione a categoria de piso", ["Todos", "Porcelanato", "Cerâmico", "Vinílico", "Retificado", "Granito"])
+categoria_piso = st.selectbox("Selecione a categoria de piso", ["Todos", "Porcelanato", "Cerâmico", "Vinílico", "Retificado", "Granito","laminado"])
 
 # Criando as abas para cada tipo de piso
-abas = st.tabs(["Laminado", "Cerâmico", "Vinílico", "Porcelanato", "Granito"])
+abas = st.tabs(["Laminado", "Cerâmico", "Vinílico", "Porcelanato", "Granito","Todos"])
 
 # Função para exibir informações do piso
 def exibir_informacoes_piso(pisos):
@@ -109,8 +109,8 @@ def exibir_informacoes_piso(pisos):
 
 # Adicionando conteúdo a cada aba
 with abas[0]:
-    st.header("Laminado")
-    exibir_informacoes_piso(pisos["Laminado"])
+    st.header("Todos")
+    exibir_informacoes_piso(pisos["Todos"])
 
 with abas[1]:
     st.header("Cerâmico")
@@ -127,6 +127,9 @@ with abas[3]:
 with abas[4]:
     st.header("Granito")
     exibir_informacoes_piso(pisos["Granito"])
+with abas[6]:
+    st.header("Laminado")
+    exibir_informacoes_piso(pisos["Laminado"])
 
 
 # Exibindo os pisos com base na categoria selecionada
