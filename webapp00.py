@@ -10,7 +10,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url("https://www.creativefabrica.com/wp-content/uploads/2022/03/15/Concrete-Cement-Texture-Graphics-27184470-1-1-580x387.jpg");
+        background-image: url("https://www.papeiseparede.com.br/5026-thickbox_default/papel-de-parede-tijolinhos-em-gesso-3d.jpg.webp");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
