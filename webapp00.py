@@ -54,11 +54,18 @@ pisos = {
             "imagem": "https://cdn.dooca.store/116921/products/jacaranda-hd-19x123-modelo-1_1600x1600+fill_ffffff.jpg?v=1692322213",
             "descricao": "Ideal para: áreas com baixa umidade como quartos, sala de estar/jantar, corredores e Halls."
         }
-    ]
+    ],
+    "Retificado": [
+        {
+          "nome": "Piso Mont Blanc Satiny Retificado 101x101cm",
+          "preco_por_caixa": 134.44,
+          "area_por_caixa": 2.04,
+          "imagem": "https://telhanorte.vtexassets.com/arquivos/ids/1272049-1200-auto",
+          "descricao": "Ideal para: cozinhas, banheiros, áreas externas cobertas, hall de entrada e corredores."  
 }
 
 # Adicionando o filtro para selecionar a categoria de piso
-categoria_piso = st.selectbox("Selecione a categoria de piso", ["Todos", "Porcelanato", "Cerâmico", "Vinílico"])
+categoria_piso = st.selectbox("Selecione a categoria de piso", ["Todos", "Porcelanato", "Cerâmico", "Vinílico", "Retificado"])
 
 # Função para exibir os pisos com base na categoria selecionada
 def exibir_pisos(categoria):
