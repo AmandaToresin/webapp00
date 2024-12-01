@@ -1,6 +1,9 @@
 import streamlit as st
 
 # Título e cabeçalhos
+st.title("UniPisos")import streamlit as st
+
+# Título e cabeçalhos
 st.title("UniPisos")
 st.header("Descomplicando os Dados de Memorial de Cálculo na Construção")
 st.subheader("O que é Memorial de Cálculo?")
@@ -74,12 +77,11 @@ if st.button("Calcular Orçamento para Piso Retificado"):
     st.success(f"O orçamento total para o Piso Retificado é: R$ {orcamento5:.2f}")
     st.info(f"Você precisará de aproximadamente {caixas_necessarias5:.0f} caixas de Piso Retificado.")
 
-#Sexto Piso - Piso Porcelanato
-st.subheader("Porcelanato Cimentício Acetinado Borda Arredondada Externo 60x60cm (RS 152,12 por caixa de 1,8m2)")
-st.image("https://telhanorte.vtexassets.com/arquivos/ids/1272049-1200-auto", caption="Ideal para: cozinhas, banheiros, áreas externas cobertas, hall de entrada e corredores.", use_column_width=True)
-area6 = st.number_input("Digite a área do piso Retificado em m²:", min_value=0.0, format="%.2f")
-adicionar_sobra6 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Retificado?", key='retificado')
-if st.button("Calcular Orçamento para Piso Retificado"):
-    orcamento6, caixas_necessarias6 = calcular_orcamento(area6, 134.44, adicionar_sobra6, 2.04)
-    st.success(f"O orçamento total para o Piso Retificado é: R$ {orcamento6:.2f}")
-    st.info(f"Você precisará de aproximadamente {caixas_necessarias6:.0f} caixas de Piso Retificado.")
+# Sexto Piso - Piso Porcelanato
+st.subheader("Porcelanato Cimentício Acetinado Borda Arredondada Externo 60x60cm (R$ 152,12 por caixa de 1,8m²)")
+st.image("https://telhanorte.vtexassets.com/arquivos/ids/1272049-1200-auto", caption="Ideal para: áreas de piscina, garagens externas, calçadas e passarelas.", use_column_width=True)
+area6 = st.number_input("Digite a área do piso Porcelanato em m²:", min_value=0.0, format="%.2f")
+adicionar_sobra6 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Porcelanato?", key='porcelanato')
+if st.button("Calcular Orçamento para Piso Porcelanato"):
+    orcamento6, caixas_necessarias6 = calcular_orcamento(area6, 152.12, adicionar_sobra6, 1.8)
+    st.success(f"O orçamento total para o Piso Por
