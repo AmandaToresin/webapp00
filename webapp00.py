@@ -23,7 +23,6 @@ pisos = {
             "descricao": "Ideal para: sala de estar/jantar, quartos, corredores."
         }
     ],
-            
     "Porcelanato": [
         {
             "nome": "Porcelanato Cimentício Acetinado Borda Arredondada Externo 60x60cm",
@@ -89,7 +88,7 @@ pisos = {
         }
     ],
     "Granito": [
-           {
+        {
           "nome": "Piso Interno Granito Casablanca Branco 57x57cm Extrata Stones",
           "preco_por_caixa": 394.71,
           "area_por_caixa": 0.975,
