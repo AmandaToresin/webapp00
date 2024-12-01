@@ -11,7 +11,7 @@ st.markdown(
         width: 80%;  /* Ajuste a largura conforme necessário */
     }
     </style>
-    <img src="https://pbs.twimg.com/media/GdveWw2XUAAO1Bf?format=png&name=small" class="center">
+    <img src="https://pbs.twimg.com/media/GdvgKdOWoAAmogZ?format=jpg&name=small" class="center">
     """,
     unsafe_allow_html=True
 )
