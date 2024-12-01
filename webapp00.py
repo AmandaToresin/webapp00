@@ -152,7 +152,7 @@ def exibir_informacoes_piso(piso, categoria, idx):
 
     st.subheader(piso["nome"])
     st.image(piso["imagem"], caption=piso["descricao"], use_column_width=True)
-    area = st.number_input(f"Digite a área do {piso['nome']} em m²:", min_value=0.0, format="%.2f", key=f'area_{contador}')
+    area = st.number_input(f"Digite a área em m²:", min_value=0.0, format="%.2f", key=f'area_{contador}')
     adicionar_sobra = st.checkbox(f"Deseja adicionar 20% de sobra?", key=f'sobra_{contador}')
     if st.button(f"Calcular Orçamento", key=f'btn_{contador}'):
         orcamento, caixas_necessarias = calcular_orcamento(area, piso["preco_por_caixa"], adicionar_sobra, piso["area_por_caixa"])
