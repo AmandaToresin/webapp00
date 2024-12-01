@@ -10,7 +10,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url("https://www.jeitodegente.com.br/wp-content/uploads/2018/03/imagens-fundo-banner-site-03.png");
+        background-image: url("hhttps://static.vecteezy.com/ti/vetor-gratis/p1/7276935-padrao-icones-construcao-padrao-doodle-sem-costura-com-ferramentas-para-construcao-ilustracao-sobre-o-tema-da-construcao-vetor.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
