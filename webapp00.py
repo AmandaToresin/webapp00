@@ -101,35 +101,48 @@ pisos = {
 # Criando as abas para cada tipo de piso
 abas = st.tabs(["Todos", "Laminado", "Cerâmico", "Vinílico", "Porcelanato", "Granito"])
 
+# Função para exibir informações do piso
+def exibir_informacoes_piso(piso, categoria, idx):
+    st.subheader(piso["nome"])
+    st.image(piso["imagem"], caption=piso["descricao"], use_column_width=True)
+    area = st.number_input(f"Digite a área do {piso['nome']} em m²:", min_value=0.0, format="%.2f", key=f'area_{categoria}_{idx}')
+    adicionar_sobra = st.checkbox(f"Deseja adicionar 20% de sobra ao {piso['nome']}?", key=f'sobra_{categoria}_{idx}')
+    if st.button(f"Calcular Orçamento para {piso['nome']}", key=f'btn_{categoria}_{idx}'):
+        orcamento, caixas_necessarias = calcular_orcamento(area, piso["preco_por_caixa"], adicionar_sobra, piso["area_por_caixa"])
+        st.success(f"O orçamento total para o {piso['nome']} é: R$ {orcamento:.2f}")
+        st.info(f"Você precisará de aproximadamente {caixas_necessarias:.0f} caixas de {piso['nome']}.")
+
 # Adicionando conteúdo a cada aba
 with abas[0]:
     st.header("Todos")
-    for categoria in pisos.keys():
-        exibir_informacoes_piso(pisos, categoria)
+    for categoria, pisos_categoria in pisos.items():
+        for idx, piso in enumerate(pisos_categoria):
+            exibir_informacoes_piso(piso, categoria, idx)
 
 with abas[1]:
     st.header("Laminado")
-    exibir_informacoes_piso(pisos, "Laminado")
+    for idx, piso in enumerate(pisos["Laminado"]):
+        exibir_informacoes_piso(piso, "Laminado", idx)
 
 with abas[2]:
     st.header("Cerâmico")
-    exibir_informacoes_piso(pisos, "Cerâmico")
+    for idx, piso in enumerate(pisos["Cerâmico"]):
+        exibir_informacoes_piso(piso, "Cerâmico", idx)
 
 with abas[3]:
     st.header("Vinílico")
-    exibir_informacoes_piso(pisos, "Vinílico")
+    for idx, piso in enumerate(pisos["Vinílico"]):
+        exibir_informacoes_piso(piso, "Vinílico", idx)
 
 with abas[4]:
     st.header("Porcelanato")
-    exibir_informacoes_piso(pisos, "Porcelanato")
+    for idx, piso in enumerate(pisos["Porcelanato"]):
+        exibir_informacoes_piso(piso, "Porcelanato", idx)
 
 with abas[5]:
     st.header("Granito")
-    exibir_informacoes_piso(pisos, "Granito")
-
-
-# Exibindo os pisos com base na categoria selecionada
-exibir_pisos(categoria_piso)
+    for idx, piso in enumerate(pisos["Granito"]):
+        exibir_informacoes_piso(piso, "Granito", idx)
 
 # Primeiro Piso - Piso Laminado
 st.subheader("Piso Laminado Eucafloor Prime Click Carvalho Canela Cx 2,36m² (R$ 119,90 por caixa de 2,36 m²)")
