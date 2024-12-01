@@ -80,7 +80,7 @@ pisos = {
             "nome": "Piso Cerâmico Marmorizado Brilhante Borda Reta Interno 82x82 (Caixa com 2,69m² por R$31,87)",
             "preco_por_caixa": 31.87,
             "area_por_caixa": 2.69,
-            "imagem": "",
+            "imagem": "https://cdn.leroymerlin.com.br/products/piso_ceramico_interno_brilhante_borda_reta_82x82cm_miragem_91900865_0002_600x600.jpg",
             "descricao": "Ideal para: indicado para área externas como varandas, garagens, calçadas, áreas de lazer e jardins."
         }
     ],
