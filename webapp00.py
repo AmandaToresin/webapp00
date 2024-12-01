@@ -28,6 +28,20 @@ pisos = {
             "area_por_caixa": 2.48,
             "imagem": "https://cdn.leroymerlin.com.br/products/porcelanato_acetinado_interno_91x91cm_blush_artens_92271886_6991_600x600.jpg",
             "descricao": "Ideal para: sala de estar/jantar, cozinhas e banheiros internos, escritórios e ambientes comerciais, corredores e Halls."
+        },
+        {
+            "nome": "Porcelanato Marmorizado Polido Borda Reta Interno 120x120cm",
+            "preco_por_caixa": 541.18,
+            "area_por_caixa": 2.48,
+            "imagem": "https://acheiseupiso.com/cdn/shop/files/porcelanato_interno_polido_borda_reta_120x120cm_chloe_lux_90820170_b5ae_600x600_c41cdb0c-4520-49ff-8aad-13dd680c9493.jpg?v=1730828719",
+            "descricao": "Ideal para: sala de estar/jantar, hall de entrada, cozinhas e banheiros, áreas comerciais de luxo."
+        },
+        {
+            "nome": "Porcelanato Decorado Acetinado Borda Reta Externo 72x72cm",
+            "preco_por_caixa": 121.50,
+            "area_por_caixa": 2.59,
+            "imagem": "https://d365e82sgxmduv.cloudfront.net/Custom/Content/Products/23/32/2332883_29549-porcelanato-cairo-externo-rust-72x72-cx2-59m-72111281-savane_z5_638300284526519484.webp",
+            "descricao": "Ideal para: varandas e pátios, áreas de piscina, calçada e passarelas, jardins e áreas de convivência externas"
         }
     ],
     "Cerâmico": [
