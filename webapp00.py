@@ -77,6 +77,15 @@ pisos = {
           "imagem": "https://telhanorte.vtexassets.com/arquivos/ids/1272049-1200-auto",
           "descricao": "Ideal para: cozinhas, banheiros, áreas externas cobertas, hall de entrada e corredores."
         }
+    ],
+    "Granito": [
+           {
+          "nome": "Piso Interno Granito Casablanca Branco 57x57cm Extrata Stones",
+          "preco_por_caixa": 394.71,
+          "area_por_caixa": 0.975,
+          "imagem": "https://cdn.leroymerlin.com.br/products/piso_ext_granito_casablanca_branco_57x57_m2_extratatones_91789663_91df_600x600.png",
+          "descricao": "Ideal para: áreas internas de alto padrão, como salas de estar/jantar, cozinhas gourmet, banheiros luxuosos, escritórios e hall de entrada."
+        }
     ]
 }
 
