@@ -5,30 +5,38 @@ st.title("MABIL")
 st.header("🔷 Calculadora de Pisos")
 st.write("Bem-vindo ao nosso calculador de orçamento de piso! Aqui, você pode calcular de forma rápida e fácil quanto vai gastar para revestir sua área com pisos de sua escolha. Informe a metragem quadrada do ambiente, selecione o tipo de piso e obtenha uma estimativa precisa do custo total. Nosso objetivo é tornar o processo de planejamento da reforma mais simples e transparente, ajudando você a tomar decisões informadas e adequadas ao seu orçamento. Comece agora e descubra quanto seu projeto vai custar!")
 
-# Adicionando CSS para estilizar o fundo e garantir que todo o texto esteja visível
 st.markdown(
     """
     <style>
     .stApp {
-        background-color: white; /* Fundo branco */
-        color: black; /* Texto preto */
+        background-color: white;
+        color: black;
     }
-    .stTextInput input {
-        background-color: white !important;
-        color: black !important;
+
+    .stTextInput input,
+    .stSelectbox,
+    .stRadio,
+    .stCheckbox,
+    .stTextArea,
+    .stNumberInput {
+        background-color: white;
+        color: black;
+        border: 1px solid #ccc;
+        padding: 5px;
+        border-radius: 5px;
     }
+
     .stButton button {
-        background-color: #4CAF50; /* Verde */
-        color: white !important;
-    }
-    .stSelectbox, .stRadio, .stCheckbox, .stTextArea, .stNumberInput {
-        color: black !important;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
-
 def calcular_orcamento(area, preco_por_caixa, adicionar_sobra, area_por_caixa):
     if adicionar_sobra:
         area *= 1.20  # Adiciona 20% à área total
