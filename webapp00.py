@@ -1,7 +1,27 @@
 import streamlit as st
 
-# Título e cabeçalhos
-st.image("https://pbs.twimg.com/media/GdveWw2XUAAO1Bf?format=png&name=small")
+import streamlit as st
+
+# Adicionando CSS para centralizar a imagem e definir sua forma
+st.markdown(
+    """
+    <style>
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%; /* Altere o valor conforme necessário */
+        border-radius: 10px; /* Define cantos arredondados para a imagem */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Exibindo a imagem centralizada e retangular
+st.image("https://pbs.twimg.com/media/GdveWw2XUAAO1Bf?format=png&name=small", use_column_width=False, caption="mabil", output_format="PNG")
+st.markdown('<img src="https://pbs.twimg.com/media/GdveWw2XUAAO1Bf?format=png&name=small" class="center">', unsafe_allow_html=True)
+
 st.header("🔷 Calculadora de Pisos")
 st.write("Bem-vindo ao nosso calculador de orçamento de piso! Aqui, você pode calcular de forma rápida e fácil quanto vai gastar para revestir sua área com pisos de sua escolha. Informe a metragem quadrada do ambiente, selecione o tipo de piso e obtenha uma estimativa precisa do custo total. Nosso objetivo é tornar o processo de planejamento da reforma mais simples e transparente, ajudando você a tomar decisões informadas e adequadas ao seu orçamento. Comece agora e descubra quanto seu projeto vai custar!")
 
