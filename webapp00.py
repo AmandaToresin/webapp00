@@ -60,8 +60,6 @@ st.image("https://telhanorte.vtexassets.com/arquivos/ids/1272049-1200-auto", cap
 area3 = st.number_input("Digite a área do piso Retificado em m²:", min_value=0.0, format="%.2f")
 adicionar_sobra3 = st.checkbox("Deseja adicionar 20% de sobra ao Piso Retificado?", key='vinilico')
 if st.button("Calcular Orçamento para Piso Retificado"):
-    orcamento3, caixas_necessarias3 = calcular_orcamento(area3, 99.90, adicionar_sobra3, 4.72)
+    orcamento3, caixas_necessarias3 = calcular_orcamento(area3, 99.90, adicionar_sobra3, 2.04)
     st.success(f"### O orçamento total para o Piso Retificado é: R$ {orcamento3:.2f}")
     st.info(f"Você precisará de aproximadamente {caixas_necessarias3:.0f} caixas de Piso Retificado.")
-
-#Quinto Piso - 
