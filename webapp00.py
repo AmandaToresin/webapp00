@@ -22,6 +22,27 @@ pisos = {
             "area_por_caixa": 2.36,
             "imagem": "https://static.estilohomecenter.com.br/public/estilohomecenter/imagens/produtos/piso-laminado-eucafloor-carvalho-canela-prime-click-cx-2-36m2-6651f11b0ba71.jpg",
             "descricao": "Ideal para: sala de estar/jantar, quartos, corredores."
+        },
+        {
+            "nome": "Piso Laminado Click Elmo Ravena 136x21,7cm (Caixa com 2,36m² por R$58,40)",
+            "preco_por_caixa": 58.40,
+            "area_por_caixa": 2.36,
+            "imagem": "https://cdn.leroymerlin.com.br/products/piso_laminado_click_elmo_ravena_136x21,7cm_m2_artens_89238114_bb19_600x600.jpg",
+            "descricao": "Ideal para: sala de estar/jantar, quartos, corredores."
+        },
+        {
+            "nome": "Piso Laminado Click Prime Nogueira Malaga 135,7x21,7cm (Caixa com 2,65m² por R$56.90)",
+            "preco_por_caixa": 56.90,
+            "area_por_caixa": 2.65,
+            "imagem": "https://cdn.leroymerlin.com.br/products/piso_laminado_click_prime_click_malaga_7mmx2,35x13,8cm_m2_92252153_34b3_600x600.jpg",
+            "descricao": "Ideal para: sala de estar/jantar, quartos, corredores."
+        },
+        {
+            "nome": "Piso Laminado Click Twist Arenal 134x18,7cm (Caixa com 2,65m² por R$106,28)",
+            "preco_por_caixa": 106.28,
+            "area_por_caixa": 2.26,
+            "imagem": "https://cdn.leroymerlin.com.br/products/piso_laminado_click_twist_twist_arenal_134x18,7cm_m2_durafloor_90847491_da74_600x600.jpg",
+            "descricao": "Ideal para: sala de estar/jantar, quartos, corredores."
         }
     ],
     "Porcelanato": [
