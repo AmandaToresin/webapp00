@@ -28,14 +28,14 @@ pisos = {
         "area_por_caixa": 2.18,
         "imagem": "https://telhanorte.vtexassets.com/arquivos/ids/1245914/7899436339296.jpg?v=638119047284200000",
         "descricao": "Ideal para: cozinhas, banheiro, áreas externas cobertas, sala de estar/jantar, corredores e Halls."
-    },
-    "Piso Cerâmico Pedra": {
+
         "nome": "Piso Cerâmico Pedra Acetinado Borda Arredondada Externo 61,5x61,5cm",
         "preco_por_caixa": 58.03,
         "area_por_caixa": 2.65,
         "imagem": "https://dcdn.mitiendanube.com/stores/002/797/263/products/piso-sao-tome-61x61-p1-a12fa27bc8dd7bbf5416763131496560-640-0.webp",
         "descricao": "Ideal para: indicado para área externas como varandas, garagens, calçadas, áreas de lazer e jardins."
     },
+
     "Piso Vinílico": {
         "nome": "Piso Vinílico Vinil Forte Jacarandá 2x19x123cm",
         "preco_por_caixa": 99.90,
